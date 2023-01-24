@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% load users_template_tags %}
+{% load tz %}
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{instance.section}}</div>
+
+            <ul class="ah-actions actions a-alt">
+                <li>
+                    <a href="{% url 'delivery_agents:create_agent' %}" title="Create Agent">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'delivery_agents:edit_agent' pk=instance.pk %}" title="Edit Event">
+                        <i class="zmdi zmdi-edit"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'delivery_agents:delete_agent' pk=instance.pk %}" title="Delete Event">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix" data-columns="2" id="c-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Basic Info <small></small></h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="list-group lg-alt c-overflow">
+
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Name</div>
+                                <small class="lgi-text">{{instance.name}}</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Email</div>
+                                <small class="lgi-text">{{instance.email}}</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Joining Date</div>
+                                <small class="lgi-text">{{instance.joining_date}}</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">phone</div>
+                                <small class="lgi-text">{{instance.phone}}</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Address</div>
+                                <small class="lgi-text">{{instance.address}}</small>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Gender</div>
+                                <small class="lgi-text">
+
+                                   {% if instance.gender == '10' %}
+                                        Male
+                                    {% elif instance.gender == '20' %}
+                                        Female
+                                    {% else %}
+                                        Other
+                                    {% endif %}
+
+                                </small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Salary</div>
+                                <small class="lgi-text">{{instance.salary}}</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Location</div>
+                                <small class="lgi-text">{{instance.location}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
+
+{% block static %}
+{% load static %}
+{% endblock %}

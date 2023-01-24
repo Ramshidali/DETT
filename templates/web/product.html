@@ -1,0 +1,97 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+
+{% block content %}
+{%include 'web/include/navbar.html' %}
+<div class="wrapper">
+    <div class="mainContainer">
+        <div class="headNav">
+            <h5>
+                {% comment %} <small><a href="{% url 'web:gifts' %}">Gifting Products</a> / </small> {% endcomment %}
+                <small>{{instance.product.product_category}} / </small>{{instance.product.name}}
+            </h5>
+        </div>
+        <div class="subContainer">
+            <div class="imageSection">
+                <div class="left">
+                    <div class="slider-nav">
+                        {% for instance in product_image %}
+                        <div class="imgLeft">
+                            <img src="{{instance.feautured_image.url}} " alt="Image" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="right slider-for">
+                    <div class="slider-for">
+                        {% for instance in product_image %}
+                        <div class="imgRight">
+                            <img src="{{instance.feautured_image.url}}" alt="Image" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <h5 class="productTitle">{{instance.product.name}}</h5>
+                <h6 class="subtitle">{{instance.product.meta_description}}</h6>
+                <div class="priceConatiner">
+                    <div class="amount">
+                        <div class="imgContainer">
+                            <img src="{% static 'web/images/icons/rupee.svg' %}" alt="Rupee" />
+                        </div>
+                        <h5 class="amountPrice">{{instance.price}}</h5>
+                    </div>
+                    <div class="mrp">
+                        <span class="line"></span>
+                        <div class="imgContainer">
+                            <img src="{% static 'web/images/icons/rupee2.svg' %}" alt="Rupee" />
+                        </div>
+                        <h5 class="mrpPrice">{{instance.mrp}}</h5>
+                    </div>
+                    <div class="discount">
+                        <h6 class="discountText">({{offer_rate|floatformat:0}} % OFF)</h6>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="rightBox">
+                        <h5>Unit</h5>
+                        <div class="selectRight">
+                            <select name="format" id="format" onchange="variantFunction(this.value)">
+                                <option value="">Units</option>
+                                {% for unit in units %}
+                                <option value="{% url 'web:product' pk=unit.pk %}">{{unit.unit}} {{unit.uom}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDetails">
+                    <h6 class="contentTitle">PRODUCT DETAILS</h6>
+                    <p class="descriptionText">
+                        {{instance.product.product_description}}
+                    </p>
+                </div>
+
+                <div class="buyNowBtn">
+                    {% if not is_customer %}
+                    <a href="#" id="myBtn" class="botton loginButton">Buy Now</a>
+                    {% else %}
+                    <a id="myBtn" class="botton" href="{% url 'web:buy_now_address' pk=instance.pk %}">Buy Now</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block static %}
+<script type="text/javascript">
+    function variantFunction(url) {
+        window.location.replace(url);
+    }
+</script>
+
+
+{% endblock %}

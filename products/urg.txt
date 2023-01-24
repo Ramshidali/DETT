@@ -1,0 +1,72 @@
+ #     for f in product_variant_formset:
+        #         if f not in product_variant_formset.deleted_forms:
+        #             product = Product.objects.get(pk=instance.pk)
+        #             prev_stock = 0
+        #             if ProductVariant.objects.filter(product=instance, title=f.cleaned_data['title']).exists():
+        #                 prev_stock = ProductVariant.objects.filter(product=instance,
+        #                                                            title=f.cleaned_data['title']).first().stock
+        #             stock = 0
+        #             if f.cleaned_data['stock'] == prev_stock:
+        #                 stock = f.cleaned_data['stock']
+        #             else:
+        #                 stock = f.cleaned_data['stock'] + prev_stock
+        #
+        #             product = data
+        #             title = f.cleaned_data['title']
+        #             uom = f.cleaned_data['uom']
+        #             unit = f.cleaned_data['unit']
+        #             color = f.cleaned_data['color']
+        #             brand = f.cleaned_data['brand']
+        #             mrp = f.cleaned_data['mrp']
+        #             price = f.cleaned_data['price']
+        #             opening_stock = f.cleaned_data['opening_stock']
+        #             # stock = f.cleaned_data['stock']
+        #             gender = f.cleaned_data['gender']
+        #             age_group = f.cleaned_data['age_group']
+        #             person_type = f.cleaned_data['person_type']
+        #             is_default = f.cleaned_data['is_default']
+        #
+        #             if ProductVariant.objects.filter(product=product, title=title):
+        #                 print("kooo")
+        #                 # ProductVariant.objects.filter(product=instance,title=title).update(
+        #                 #     title=title,
+        #                 #     uom=uom,
+        #                 #     unit=unit,
+        #                 #     color=color,
+        #                 #     brand=brand,
+        #                 #     price=price,
+        #                 #     mrp=mrp,
+        #                 #     opening_stock=opening_stock,
+        #                 #     stock=stock,
+        #                 #     gender=gender,
+        #                 #     age_group=age_group,
+        #                 #     person_type=person_type,
+        #                 #     is_default=is_default,
+        #                 # )
+        #             else:
+        #                 date_updated = datetime.datetime.now()
+        #                 auto_id = get_auto_id(ProductVariant)
+        #                 creator = request.user
+        #                 updater = request.user
+        #                 ProductVariant.objects.create(
+        #                     date_updated=date_updated,
+        #                     creator=creator,
+        #                     updater=updater,
+        #                     auto_id=auto_id,
+        #                     product=data,
+        #                     title=title,
+        #                     uom=uom,
+        #                     unit=unit,
+        #                     color=color,
+        #                     brand=brand,
+        #                     price=price,
+        #                     mrp=mrp,
+        #                     opening_stock=opening_stock,
+        #                     stock=stock,
+        #                     gender=gender,
+        #                     age_group=age_group,
+        #                     person_type=person_type,
+        #                     is_default=is_default,
+        #                 )
+        #
+        #             data.save()

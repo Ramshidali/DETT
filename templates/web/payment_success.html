@@ -1,0 +1,66 @@
+{% extends 'web/web_base.html' %}
+{% load i18n %}
+
+{% load static %}
+{% load tz %}
+{% block content %}
+{%include 'web/include/navbar.html' %}
+	<section id="page">
+		<div class="content">
+			<h3>Your Transaction Successful</h3>
+		</div>
+	</section>
+{% endblock %}
+
+{% block static %}
+    {% load static %}
+    <style type="text/css">
+    	body {
+    		margin :0;
+    	}
+	    #page{
+			background: #fff;
+			width: 100%;
+			background-size: cover;
+			padding: 150px 0 90px;
+		}
+		#page div.content{
+			text-align: center;
+			position: relative;
+		    top: 35%;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    color: #fff;
+		}
+		#page div.content h3{
+			font-size: 35px;
+			color: #fff;
+			margin-bottom: 0;
+			color: #000;
+		}
+		#page div.content p{
+			font-size: 20px;
+		    margin-top: 6px;
+		    margin-bottom: 30px;
+		    color: #000;
+		}
+		#page div.content a{
+
+		}
+		#page div.content a.button1{
+			color: #fff;
+			padding: 10px 35px;
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			display: inline-block;
+			font-size: 20px;
+			margin-top: 20px;
+			text-align: center;
+			border: 2px solid #fff;
+		}
+
+    </style>
+
+{% endblock %}	

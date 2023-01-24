@@ -1,0 +1,271 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+
+{% block content%}
+
+{%include 'web/include/navbar.html' %}
+<div class="contents">
+	<div class="wrapper">
+		{% if is_privacy %}
+		<div class="container" style="padding-top:100px;">
+			<div class="title-box">
+				<h3>Privacy Policy</h3>
+			</div>
+		</div>
+		<div class="container terms">
+			<p class="black">This privacy policy has been compiled to better serve those who are concerned with how
+				their 'Personally identifiable information' (PII) is being used online. PII, as used in Indian privacy
+				law and information security, is information that can be used on its own or with other information to
+				identify, contact, or locate a single person, or to identify an individual in context. Please read our
+				privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise
+				handle your Personally Identifiable Information in accordance with our website.
+				What personal information do we collect from the people that visit our blog, website or app? When
+				ordering or registering on our site, as appropriate, you may be asked to enter your name, email address,
+				mailing address, phone number or other details to help you with your experience
+			</p>
+			<h3>How do we use your information?</h3>
+			<p class="black">
+				We may use the information we collect from you when you register, book a restaurant, respond to a survey
+				or marketing communication, surf the website, or use certain other site features in the following ways
+			</p>
+			<div class="inner-container">
+				<div class="items">
+					<span class="grey"></span>
+					<p class="grey">To personalise user's experience and to allow us to deliver the type of content and
+						product offerings in which you are most interested.
+					</p>
+				</div>
+				<div class="items">
+					<span class="grey"></span>
+					<p class="grey">To improve our website in order to better serve you.</p>
+				</div>
+				<div class="items">
+					<span class="grey"></span>
+					<p class="grey">To allow us to better service you in responding to your customer service requests.
+					</p>
+				</div>
+				<div class="items">
+					<span class="grey"></span>
+					<p class="grey">To administer a contest, promotion, survey or other site feature. To send periodic
+						emails regarding your order or other products and services.</p>
+				</div>
+
+			</div>
+			<h3>Policy Related to Minors</h3>
+			<p class="black">We do not knowingly collect personal information from minors under the age of 18.</p>
+			<p class="black">Minors are not permitted to use the dett.app website or services, and dett.app requests
+				that minors under the age of 18 not submit any personal information to the website. Since information
+				regarding minors under the age of 18 is not collected, dett.app does not knowingly distribute personal
+				information regarding minors under the age of 18.</p>
+			<div class="inner-container">
+				<p> Users will be notified of any privacy policy changes: </p>
+				<div class="items">
+					<span class="grey"></span>
+					<p>On our Privacy Policy Page </p>
+				</div>
+				<p>Users are able to change their personal information: </p>
+				<div class="items">
+					<span class="grey"></span>
+					<p>By calling us</p>
+				</div>
+				<p>How does our site handle do not track signals? </p>
+				<div class="items">
+					<span class="grey"></span>
+					<p>We honor do not track signals and do not track, plant cookies, or use advertising when a Do Not
+						Track (DNT) browser mechanism is in place. </p>
+				</div>
+				<p>Does our site allow third party behavioral tracking? </p>
+				<div class="items">
+					<span class="grey"></span>
+					<p>It is also important to note that we allow third party behavioral tracking COPPA (Children Online
+						Privacy Protection Act) </p>
+				</div>
+				<div class="items">
+					<span class="grey"></span>
+					<p> When it comes to the collection of personal information from children under 13, the Children's
+						Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, the
+						nation's consumer protection agency, enforces the COPPA Rule, which spells out what operators of
+						websites and online services must do to protect children's privacy and safety online.</p>
+				</div>
+				<div class="items">
+					<span class="grey"></span>
+					<p>We do not specifically market to children under 13.</p>
+				</div>
+			</div>
+			<h3>Fair Information Practices</h3>
+			<p class="black">The Fair Information Practices Principles form the backbone of privacy law in the United
+				States and the concepts they include have played a significant role in the development of data
+				protection laws around the globe. Understanding the Fair Information Practice Principles and how they
+				should be implemented is critical to comply with the various privacy laws that protect personal
+				information.</p>
+			<p class="black">In order to be in line with Fair Information Practices we will take the following
+				responsive action, should a data breach occur:</p>
+			<div class="inner-container">
+				<p>We will notify the users via email</p>
+				<div class="items">
+					<span class="grey"></span>
+					<p class="grey"> Within 1 business day</p>
+				</div>
+				<p>We also agree to the individual redress principle, which requires that individuals have a right to
+					pursue legally enforceable rights against data collectors and processors who fail to adhere to the
+					law. This principle requires not only that individuals have enforceable rights against data users,
+					but also that individuals have recourse to courts or a government agency to investigate and/or
+					prosecute non-compliance by data processors</p>
+			</div>
+			<h3>International Data Transfers </h3>
+			<p class="black">When Dett receives any user information outside of India, we comply with providing adequate
+				protection for the transfer of personal information. acts as a data processor for its users based
+				outside of India by providing data hosting, maintenance, support, and troubleshooting of services, as
+				well as other redundant back office support. With respect to such international data transfers, we
+				implement standard contractual clauses and other mechanisms to protect such data.</p>
+			<p class="black">Individuals that use products or services offered by Dett may wish to raise any privacy
+				questions directly, including filing any requests to access U.S. or European customer data or exercise
+				other privacy rights. Any Updates on Dett services is communicated to users only if the individual has
+				opted in to receive information</p>
+		</div>
+		{% endif %}
+		{% if is_terms %}
+		<div class="container" style="padding-top:100px;">
+			<div class="title-box">
+				<h3>Terms and Conditions</h3>
+			</div>
+		</div>
+		<div class="container">
+			<p class="black">The domain name gift.dett.app (hereinafter referred to as &quot;Website&quot;) is owned by
+				Dett Private
+				Limited a company incorporated under the Companies Act, 1956.</p>
+			<p class="black">Your use of the Website and services and tools are governed by the following terms and
+				conditions (&quot;Terms of Use&quot;) as applicable to the Website including the applicable policies
+				which
+				are incorporated herein by way of reference. If You transact on the Website, You shall be subject
+				to the policies that are applicable to the Website for such transaction. By mere use of the
+				Website, You shall be contracting with Dett Private Limited and these terms and conditions
+				including the policies constitute Your binding obligations, with Dett.</p>
+
+			<h3>When do we collect information? </h3>
+			<p>We collect information from you when you register on our site, book a gift, or enter information on our
+				site.</p>
+
+			<h3>How do we protect visitor information? </h3>
+			<p> Our website is scanned on a regular basis for security deficiency and known vulnerabilities in order to
+				make your visit to our site as safe as possible.</p>
+			<p> Your personal information is contained behind secured networks and is only accessible by a limited
+				number of persons who have special access rights to such systems, and are required to keep the
+				information confidential.</p>
+			<p> We implement a variety of security measures when a customer books a gift, submits, or accesses their
+				information to maintain the safety of your personal information.
+				All transactions are processed through a gateway provider and are not stored or processed on our
+				servers.</p>
+			<p>It is important for you to protect against unauthorised access to your password and to your computer. Be
+				sure to sign off when you finish using a shared computer.</p>
+
+			<h3>Do we use 'cookies'? </h3>
+			<p>Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive
+				through your Web browser (if you allow) that enables the site's or service provider's systems to
+				recognize your browser and capture and remember certain information. For instance, we use cookies to
+				help us remember and process the items in your shopping cart. </p>
+			<p>They are also used to help us understand your preferences based on previous or current site activity,
+				which enables us to provide you with improved services. We also use cookies to help us compile aggregate
+				data about site traffic and site interaction so that we can offer better site experiences and tools in
+				the future.</p>
+			<p class="black">We use cookies to:</p>
+			<p> Understand and save user's preferences for future visits. <br>
+				Keep track of advertisements. <br>
+				Compile aggregate data about site traffic and site interactions in order to offer better site
+				experiences and tools in the future. We may also use trusted third party services that track this
+				information on our behalf. <br>
+				You can choose to have your computer warn you each time a cookie is being sent, or you can choose to
+				turn off all cookies. You do this through your browser (like Internet Explorer) settings. <br>
+				Each browser is a little different, so look at your browser's Help menu to learn the correct way to
+				modify your cookies. <br>
+			</p>
+			<p class="black">If users disable cookies in their browser: </p>
+			<p>If you disable cookies off, some features will be disabled. It will turn off some of the features that
+				make your site experience more efficient and some of our services will not function properly. </p>
+			<p>However, you can still make reservations by contacting Dett. </p>
+
+			<h3>Third Party Disclosure</h3>
+			<p class="black">Do we disclose the information we collect to Third Parties?</p>
+			<p>We do not sell, trade, or otherwise transfer to outside parties your name, address, city, town, any form
+				or online contact identifier email, name of chat account, or any personally identifiable information
+				without your consent. In case, we get into a partnership, which requires us to share the information
+				with the said third party, the same will be communicated to the customer very clearly, at the time of
+				collecting the information.</p>
+
+			<p class="black">Third party links</p>
+			<p>Occasionally, at our discretion, we may include or offer third party products or services on our website.
+				These third party sites have separate and independent privacy policies. We, therefore, have no
+				responsibility or liability for the content and activities of these linked sites. Nonetheless, we will
+				never share your personal information and will always protect the integrity of our site and welcome any
+				feedback about these sites. </p>
+
+			<p class="black">Can Spam Act</p>
+			<p>The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for
+				commercial messages, gives recipients the right to have emails stopped from being sent to them, and
+				spells out tough penalties for violations.</p>
+
+			<p class="black">We collect your email address in order to:</p>
+			<p>Send information, respond to inquiries, and/or other requests or questions.
+				Market to our mailing list or continue to send emails to our clients after the original transaction has
+				occurred to enhance their dining experience</p>
+
+			<p class="black">To be in accordance with CANSPAM we agree to the following:</p>
+			<p>NOT use false, or misleading subjects or email addresses <br>
+				Identify the message as an advertisement in some reasonable way <br>
+				Include the physical address of our business or site headquarters <br>
+				Monitor third party email marketing services for compliance, if one is used. <br>
+				Honour opt-out/unsubscribe requests quickly <br>
+				Allow users to unsubscribe by using the link at the bottom of each email</p>
+
+			<p class="black">If at any time you would like to unsubscribe from receiving future emails, you can email us
+				at</p>
+			<p class="black">hello@dett.app</p>
+			<p>Follow the instructions at the bottom of each email. And we will promptly remove you from ALL
+				correspondence</p>
+		</div>
+		{% endif %}
+		{% if is_return %}
+		<div class="container" style="padding-top:100px;">
+			<div class="title-box">
+				<h3>Return, Refund, Shipping and Cancellation policy</h3>
+			</div>
+		</div>
+		<div class="container">
+			<p class="black">Return Policy for Courier Items</p>
+			<p>All Courier items and nonperishable items can be returned in case of defective or damaged delivery.
+				Please send the Photo taken while opening the packaging of the items to whatsapp number +91 858 999 8009
+				within 24 hours of delivery. The company will either send a new product or refund the amount for the
+				damaged goods to the receiver. The discretion to give refund or redeliver the items solely lies with
+				Dett.</p>
+
+			<p class="black"> Refund Procedure</p>
+			<p>1. Customers will receive the Refund electronically via the same payment gateway that was used to make
+				the payment at the time of placing the order.</p>
+			<p>2. From the day of cancellation it might take upto 15 working days for the refund payment to be credited
+				back into the customer's account (bank or credit card or debit card account).</p>
+
+			<p class="black">Cancellation Policy</p>
+
+			<p>Cancellation request can be made 5 days prior to the date of delivery upto 10AM.In order to cancel an
+				order, please contact our customer care team by sending a message to out whatsapp number +91 858 999
+				8009 .If a customer requests for cancellation of an order there will be a cancellation fee deductible.
+			</p>
+
+			<p>Dett reserves the right not to cancel orders already in process at the local delivery point, en-route or
+				delivered. Orders placed the same day are processed immediately, and hence cannot be cancelled. Our
+				working is from Monday to Saturday</p>
+
+			<p class="black">Shipping Policy</p>
+
+			<p>When a customer places an order, our team will immediately pack the gift with utmost care and will be handed over to our delivery partner.  Our logistics partner makes sure it is delivered on time (within 4-9 business days).
+				There will be a Packing charge of Rs. 100 on all orders.</p>
+
+			<p>If the orders are to be delivered by logistic companies, it is possible that Dett courier partners have a holiday between the day you placed your order and the date of delivery. In this case, the delivery may not be made on the estimated date. Estimated delivery time depends on the availability of the product and the destination to which you want the order/product to be delivered.
+			</p>
+
+		</div>
+		{% endif %}
+	</div>
+</div>
+
+{% endblock %}

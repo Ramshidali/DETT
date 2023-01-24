@@ -1,0 +1,104 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+{% load web_templates_tags %}
+{% block content %}
+{%include 'web/include/navbar.html' %}
+
+<div class="wrapper">
+    <div class="mainContainer">
+        <div class="headNav">
+            <h5>
+                <small> Gift item/ </small><small>{{instance.product.product_category.category_name}} /
+                </small>{{instance.product.name}}
+            </h5>
+        </div>
+        <div class="place-order-bottom">
+            <!-- add address -->
+            <div class="left">
+
+                <a href="#" id="addAddressBtn" class="address">+ Add Address</a>
+
+                <form class="address-cards" action="#">
+                    {% for a in address %}
+                    <div class="card">
+                        <p>
+                            <input type="radio" data-url="{% url 'web:set_default_address' pk=a.pk %}"
+                                id="add_default{{a.pk}}" onclick="change_address('add_default{{a.pk}}')"
+                                name="radio-group" {% if a.is_default %}checked{% endif %}>
+                            <label for="add_default{{a.pk}}">{{a.name}}</label>
+                        <p>{{a.address_line1}}. {{a.street}},
+                            {{a.city}} {{a.landmark}} {{a.state}}-{{a.pincode}}</p>
+                        </p>
+                    </div>
+                    {% endfor %}
+                </form>
+            </div>
+
+            <!-- place order -->
+
+            <div class="right">
+                <div class="price-details">
+                    <h3 class="title">Price Details</h3>
+                    {% with instance.pk|get_total_gst as amt %}
+                    <div class="price-split">
+                        Total MRP (include all taxes) <h5 class="price">₹{{amt.total_price}}</h5>
+                    </div>
+                    <div class="price-split">
+                        GST <h5 class="price">₹{{amt.gst_total}}</h5>
+                    </div>
+                    <div class="price-split">
+                        Delivery Charges <h5 class="price">₹0</h5>
+                    </div>
+                    <div class="price-split">
+                        Discount <h5 class="price">₹0</h5>
+                    </div>
+                    <span class="line"></span>
+                    <div class="total-price">Total Amount <h4 class="price">₹{{amt.total_price}}</h4>
+                    </div>
+                    {% endwith %}
+                </div>
+                <a href="" class="place-order-button" style="pointer-events: none; opacity: 0.5;">Place Order</a>
+            </div>
+        </div>
+        <div class="buyNowBtn">
+            <a href="{% url 'web:buy_now_address_next' pk=instance.pk %}" id="myBtn" class="botton">Next</a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+        $(".login-box").css({
+            display: "block",
+        });
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+
+{% endblock %}

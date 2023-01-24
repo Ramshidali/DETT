@@ -1,0 +1,117 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+{% load web_templates_tags %}
+
+{% block content %}
+
+{%include 'web/include/navbar.html' %}
+        <div class="itemContainer">
+            <div class="wrapper">
+                <div class="subContainer">
+                    <div class="titleContainer">
+                        <h3 class="title">Gifting Products</h3>
+                    </div>
+                    <div class="menuContainer">
+                        <!-- <ul class="menuItems">
+                            <li><a href="?category-id=" >All</a></li>
+                            {% for category in categories|slice:":7" %}
+                                <li ><a href="?category-id={{category.id}}"  >{{category.category_name}}</a></li>
+                            {% endfor %}
+                        </ul> -->
+                        <div class="categories">
+                            <form style="width: 100%;" method="get" action="">
+                                <select onchange="$(this).parent().submit()" name="category-id" id="select-categories" >
+                                    <option value="">
+                                        <a href="?category-id=">All</a>
+                                    </option>
+                                    {% for category in categories|slice:":7" %}
+                                    <option {% if category__pk == category.pk|safe %} selected {% endif %} %} value={{category.pk}}>
+                                        <a href="?category-id={{category.id}}">{{category.category_name}}</a>
+                                    </option>
+                                    {% endfor %}
+
+                                </select>
+                            </form>
+                            <i class="fa fa-angle-down angle_down" style="cursor: pointer;"></i>
+                            <!-- <i class="fa fa-angle-up angle_up "></i>none -->
+                        </div>
+
+                        <div class="searchbox">
+                            <form method="get" action="{% url 'web:gifts' %}">
+                                <input type="text" name="q"  value="{{ filter_data.q }}" placeholder="Search..."   />
+                                <button class="submit"><img src="{% static 'web/images/icons/search.svg' %}" alt="Search" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    {% if instances%}
+                        <div class="cardContainer">
+                            {% for instance in page_obj %}
+                            <a href="{% url 'web:product' pk=instance.pk %}">
+                                <div class="card" id="music">
+                                    <div class="top">
+                                        <img src="{{instance.product.feautured_image.url}}" alt="Image" />
+                                    </div>
+                                    <div class="bottom">
+                                        <h5 class="productTitle">
+                                            {{instance.product.name}}
+                                        </h5>
+                                        <h6 class="subtitle">{{instance.product.meta_description|truncatechars:100}}</h6>
+                                        <div class="priceConatiner">
+                                            <div class="amount">
+                                                <div class="imgContainer">
+                                                    <img
+                                                        src="{% static 'web/images/icons/rupee.svg' %}"
+                                                        alt="Rupee"
+                                                    />
+                                                </div>
+                                                <h5 class="amountPrice">{{instance.price}}</h5>
+                                            </div>
+                                            <div class="mrp">
+                                                <span class="line"></span>
+                                                <div class="imgContainer">
+                                                    <img
+                                                        src="{% static 'web/images/icons/rupee2.svg' %}"
+                                                        alt="Rupee"
+                                                    />
+                                                </div>
+                                                <h5 class="mrpPrice">{{instance.mrp}}</h5>
+                                            </div>
+                                            <div class="discount">
+                                                <h6 class="discountText">
+                                                    ({{ instance|get_offer_percent|floatformat:0 }} % OFF)
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            {% endfor %}
+                        </div>
+                        <div class="paginationContainer">
+                            <div class="pagination">
+                                {% if page_obj.has_previous %}
+                                    <a class="prev" href="?page=1"><<</a>
+                                    <a class="circle" href="?page={{ page_obj.previous_page_number }}">{{page_obj.previous_page_number}}</a>
+                                {% endif %}
+                                {% if page_obj.count >= 8 or page_obj.has_next %}
+                                    <a class="circle active2" href="">{{ page_obj.number }}</a>
+                                {% elif page_obj.has_previous or page_obj.has_next %}
+                                    <a class="circle active2" href="">{{ page_obj.number }}</a>
+                                {% endif  %}
+                                {% if page_obj.has_next %}
+                                <a class="circle" href="?page={{ page_obj.next_page_number }}">{{page_obj.next_page_number}}</a>
+                                <a class="next" href="?page={{ page_obj.paginator.num_pages }}">>></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="empty">
+                            <img src="{% static 'web/images/No result found.svg' %}" alt="">
+
+                        </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+{% endblock %}

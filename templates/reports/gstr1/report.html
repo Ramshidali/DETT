@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load reports_template_tags %}
+{% block content %}
+
+<style>
+  .text-white{
+    color: #fff;
+  }
+</style>
+
+<section id="content">
+  <div class="container">
+    <div class="c-header">
+      <h2>{{title}}</h2>
+    </div>
+
+    <div class="action-header palette-theme {{current_theme}} bg clearfix">
+      <div class="ah-label hidden-xs palette-White text">{{title}}</div>
+
+      <div class="ah-search">
+        <form action="" method="get">
+          <input class="ahs-input" name="q" placeholder="Start typing..." type="text">
+
+          <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+          <input class="hidden" type="submit"/>
+        </form>
+      </div>
+
+    </div>
+
+    {% if is_error %}
+    <div class="row">
+      <div class="col">
+        <div class="card bg-danger">
+          <div class="bg-primary" style="padding: 1%">
+            <h5 class="text-white">{{error}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="row">
+
+      <!-- Page Wrapper -->
+      <div class="">
+        <!-- Page Content -->
+        <div class="content container-fluid">
+
+          {% if data %}
+            <div class="row">
+              <div class="col-md-12">
+                <div style="padding:8px;" class="bg-primary">
+                  <p class="m-0"> Reports from  {{data.from_date}} - {{data.to_date}}</p>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <form action="" method="get" style="padding:16px;">
+                    <div >
+                      <div class="col-md-6" >
+                        <div class="form-group" >
+                          <label> From Date </label>
+                          <input
+                                  autocomplete="off"
+                                  class="form-control date-picker"
+                                  id="from_date"
+                                  name="from_date"
+                                  type="text"
+                                  value="{{data.from_date}}"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label> To Date </label>
+                          <input
+                                  autocomplete="off"
+                                  class="form-control date-picker"
+                                  id="to_date"
+                                  name="to_date"
+                                  type="text"
+                                  value="{{data.to_date}}"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p style="text-align:center;font-size:15px;margin-bottom: 30px;">Details of orders HSN</p>
+              <div class="table-responsive">
+                <table class="table table-striped custom-table mb-0">
+                  <thead>
+                  <tr>
+                    <th style="width: 30px">ID</th>
+                    <th>Date</th>
+                    <th>Invoice No</th>
+                    <th>Total</th>
+                    <th>Taxable Value</th>
+                    <th>Integrated Tax</th>
+                    <th>Central Tax</th>
+                    <th>State / UT Tax</th>
+                    <th>State</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {% for instance in instances %}
+                  <tr>
+                    {% get_order_tax_details instance.pk "hsn" as details %}
+
+                    {% if details.error %}
+                    {{details.error}}
+                    <td class="bg-danger text-white" style="width:100%;font-weight: bold">Request Failed, Please again try after some time</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    {% else %}
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ instance.date_added|date:"d/m/y" }}</td>
+                      <td>Nvoice</td>
+                      <td class="amount total">{{ details.total_including_tax }}</td>
+                      <td class="amount gross_amount">{{ details.total_excluding_tax }}</td>
+                      <td class="amount igst">{{ details.igst }}</td>
+                      <td class="amount cgst">{{ details.cgst }}</td>
+                      <td class="amount sgst">{{ details.sgst }}</td>
+                      <td class="amount cess">{{ instance.billing_state }}</td>
+                      <td></td>
+                    {% endif %}
+                  </tr>
+                  {% endfor %}
+                  </tbody>
+                  <tfoot>
+                  {% if get_hsn_totals.status %}
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>{{get_hsn_totals.total_including_tax}}</th>
+                      <th>{{get_hsn_totals.total_without_tax}}</th>
+                      <th>{{get_hsn_totals.igst}}</th>
+                      <th>{{get_hsn_totals.cgst}}</th>
+                      <th>{{get_hsn_totals.sgst}}</th>
+                    </tr>
+                  {% else %}
+                    <tr>
+                      <th colspan="3" class="bg-warning text-white w-100">Something Went Wrong, Please try again later, {{get_hsn_totals.message}}</th>
+                    </tr>
+                  {% endif %}
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p style="text-align:center;font-size:15px;margin-bottom: 30px;margin-top: 30px">Details of orders SAC</p>
+              <div class="table-responsive">
+                <table class="table table-striped custom-table mb-0">
+                  <thead>
+                  <tr>
+                    <th style="width: 30px">ID</th>
+                    <th>Date</th>
+                    <th>Invoice No</th>
+                    <th>Total</th>
+                    <th>Taxable Value</th>
+                    <th>Integrated Tax</th>
+                    <th>Central Tax</th>
+                    <th>State / UT Tax</th>
+                    <th>State</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {% for instance in instances %}
+                  <tr>
+                    {% get_order_tax_details instance.pk "sac" as details %}
+                    {% if details.error %}
+                    {{details.error}}
+                    <td class="bg-danger text-white" style="width:100%;font-weight: bold">Request Failed, Please again try after some time</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    {% else %}
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ instance.date_added|date:"d/m/y" }}</td>
+                      <td>Nvoice</td>
+                      <td class="amount total">{{ details.total_including_tax }}</td>
+                      <td class="amount gross_amount">{{ details.total_excluding_tax }}</td>
+                      <td class="amount igst">{{ details.igst }}</td>
+                      <td class="amount cgst">{{ details.cgst }}</td>
+                      <td class="amount sgst">{{ details.sgst }}</td>
+                      <td class="amount cess">{{ instance.billing_state }}</td>
+                      <td></td>
+                    {% endif %}
+                  </tr>
+                  {% endfor %}
+                  </tbody>
+                 <tfoot>
+                  {% if get_hsn_totals.status %}
+                    <tr>
+                      <th colspan="3">Total</th>
+                      <th>{{get_sac_total.total_including_tax}}</th>
+                      <th>{{get_sac_total.total_without_tax}}</th>
+                      <th>{{get_sac_total.igst}}</th>
+                      <th>{{get_sac_total.cgst}}</th>
+                      <th>{{get_sac_total.sgst}}</th>
+                    </tr>
+                  {% else %}
+                    <tr>
+                      <th colspan="3" class="bg-warning text-white w-100">Something Went Wrong, Please try again later, {{get_hsn_totals.message}}</th>
+                    </tr>
+                  {% endif %}
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Page Content -->
+      </div>
+      <!-- /Page Wrapper -->
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% load static %}
+<aside id="s-main-menu" class="sidebar">
+    <div class="smm-header">
+        <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+    </div>
+
+    <ul class="smm-alerts">
+        <li data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+            <i class="zmdi zmdi-email"></i>
+        </li>
+        <li class="p-relative" data-user-alert="sua-notifications" data-ma-action="sidebar-open"
+            data-ma-target="user-alerts">
+            <i class="zmdi zmdi-notifications"></i>
+            <span class="notification-count palette-Red-500 bg">{{recent_notifications.count}}</span>
+        </li>
+        <li data-user-alert="sua-tasks" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+            <i class="zmdi zmdi-view-list-alt"></i>
+        </li>
+    </ul>
+
+    <ul class="main-menu">
+        <li class="active">
+            <a href="{% url 'app' %}"><i class="zmdi zmdi-home"></i> Dashboard</a>
+        </li>
+        <li class="sub-menu {% if active_parent == 'courses_module_open' %}active{% endif %} ">
+            <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-book"></i>Products</a>
+            <ul>
+                <li class="{% if active_menu == 'courses_open' %}active{% endif %} m-b-5">
+                    <a class="pull-left p-r-0" title="Courses" href="{% url 'products:categories' %}">Product Category</a>
+                    <a title="Create Course " href="{% url 'products:create_category' %}">
+                        <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+                    </a>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="{% if active_menu == 'courses_open' %}active{% endif %} m-b-5">
+                    <a class="pull-left p-r-0" title="Courses" href="{% url 'products:brands' %}">Brands</a>
+                    <a title="Create Course " href="{% url 'products:create_brand' %}">
+                        <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+                    </a>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="{% if active_menu == 'courses_open' %}active{% endif %} m-b-5">
+                    <a class="pull-left p-r-0" title="Courses" href="{% url 'products:sizes' %}">Sizes</a>
+                    <a title="Create Course " href="{% url 'products:create_size' %}">
+                        <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+                    </a>
+                    <div class="clearfix"></div>
+                </li>
+            
+            </ul>
+        </li>
+    </ul>
+</aside>

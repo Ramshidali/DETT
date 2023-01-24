@@ -1,0 +1,284 @@
+p.black{
+    font-size: 24px;
+    font-family: "../fonts/poppinsmedium";
+}
+p.grey{
+    font-size: 24px;
+    opacity: 1;
+    color: #000000;
+    font-size: 22px;
+    font-family: "../fonts/poppinslight";
+}
+.contents .wrapper .container .inner-container .items p.grey{
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.contents .wrapper .container .inner-container .different p.grey{
+    margin-bottom: 0px;
+}
+.contents .wrapper .container .inner-container .different p.lastchild{
+    margin-bottom: 40px;
+}
+.contents .wrapper .container .inner-container .replace p.grey{
+    margin-bottom:16px;
+}   
+.contents .wrapper .container .note p.black{
+    margin-left: 52px;
+}
+
+
+h3{
+    font-size: 25px;
+    font-family: "../fonts/poppinssemibold";
+    margin-bottom: 20px;
+}
+#spotlight.condition { 
+    background-image: none !important;
+}
+
+#spotlight.condition header { 
+    padding: 15px 0;
+}   
+
+#spotlight.condition header .head-main { 
+    align-items: center;
+}
+
+#spotlight.condition header .head-main .logo { 
+    width: 130px;
+}
+
+#spotlight.condition header .head-main .logo a { 
+
+}
+
+#spotlight.condition header .head-main .logo a img { 
+
+}
+
+#spotlight.condition header .head-main .nav { 
+
+}
+
+#spotlight.condition header .head-main .nav li { 
+
+}
+
+#spotlight.condition header .head-main .nav li .active { 
+
+}
+
+#spotlight.condition header .head-main .mobile { 
+
+}
+
+#spotlight.condition header .head-main .mobile img { 
+
+}
+
+#spotlight.condition header .head-main .close { 
+
+}
+
+#spotlight.condition header .head-main .close img { 
+
+}
+
+#spotlight.condition .wrapper { 
+    padding-top: 100px;
+}   
+
+#spotlight.condition .wrapper .menu-container { 
+}
+
+#spotlight.condition .wrapper .menu-container .menu { 
+
+}
+
+#spotlight.condition .wrapper .menu-container .menu ul { 
+
+}
+
+#spotlight.condition .wrapper .menu-container .menu ul li { 
+
+}
+
+#spotlight.condition .wrapper .menu-container .menu ul li .active { 
+
+}
+#spotlight.condition .wrapper .container{
+    border-bottom: 1px solid #D2D2D2;
+    padding-top: 100px;
+}
+#spotlight.condition .wrapper .container .title-box{
+    margin-bottom: 20px;
+}
+#spotlight.condition .wrapper .container .title-box h2{
+    font-size: 30px;
+    font-family: "../fonts/poppinssemibold";
+}   
+
+ /* contents */
+
+.contents { 
+    padding: 20px 0 60px;
+}
+.contents p { 
+    margin-bottom: 40px;
+}
+.contents .wrapper { 
+
+}
+
+.contents .wrapper .container { 
+}
+
+.contents .wrapper .container .black { 
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.contents .wrapper .container .inner-container { 
+    margin-bottom: 15px;
+}
+.contents .wrapper .container .inner-container p{ 
+    width: 98%;
+}
+.contents .wrapper .container .inner-container .items { 
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.contents .wrapper .container .inner-container .items span.grey { 
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: #B8B8B8;
+    border-radius: 50%;
+}
+
+@media all and (max-width: 980px) {
+    #spotlight.condition .wrapper .container {
+        padding-top: 81px;
+    }
+    #spotlight.condition .wrapper .container .title-box h2 {
+        font-size: 32px;
+    }
+    #spotlight.condition .wrapper {
+        padding-top: 42px;
+    }
+    #spotlight.condition .wrapper .container .title-box {
+        margin-bottom: 40px;
+    }
+    p.black {
+        font-size: 20px;
+    }
+    p.grey {
+        font-size: 18px;
+    }
+    .contents .wrapper .container .inner-container p {
+        width: 97%;
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom:12px;
+    }
+    .contents {
+        padding: 40px 0 50px;
+    }
+}
+@media all and (max-width: 768px) {
+    #spotlight.condition header ul.nav li {
+        margin-right: 18px;
+        font-size: 16px;
+    }
+    p.black {
+        font-size: 18px;
+    }
+    .contents p {
+        margin-bottom: 30px;
+    }
+    p.grey {
+        font-size: 16px;
+    }
+    .contents .wrapper .container .inner-container p {
+        width: 96%;
+    }
+    .contents .wrapper .container .inner-container .items span.grey {
+        width: 10px;
+        height: 10px;
+    }
+    h3 {
+        font-size: 18px;
+        }
+}
+@media all and (max-width: 640px) {
+    .contents .wrapper .container .black {
+        font-size: 14px;
+    }
+    #spotlight.condition header ul.nav li {
+        margin-right: 13px;
+        font-size: 14px;
+    }
+    #spotlight.condition header .head-main .logo {
+        width: 131px;
+    }
+    #spotlight.condition .wrapper .container .title-box h2 {
+        font-size: 30px;
+    }
+    #spotlight.condition .wrapper .container .title-box {
+        margin-bottom: 20px;
+    }
+    p.black {
+        font-size: 16px;
+    }
+    p.grey {
+        font-size: 14px;
+    }
+    .contents .wrapper .container .inner-container p {
+        width: 95%;
+    }
+    h3 {    
+        line-height: 1.2;
+        margin-top: 30px;
+    }
+    #spotlight.condition header .head-main .logo a img {
+        width: 63%;
+    }
+    .contents .wrapper .container .inner-container .items {
+        padding-left: 0;
+    }
+    .contents .wrapper .container .note p.black {
+        margin-left: 20px;
+    }
+}
+@media all and (max-width: 480px) {
+    #spotlight.condition .wrapper .container .title-box h2 {
+        font-size: 28px;
+    }
+    #spotlight.condition .wrapper .container .title-box {
+        margin-bottom: 28px;
+    }
+    #spotlight.condition header {
+        padding: 15px 0;
+    }
+    .contents .wrapper .container .inner-container .items p.grey {
+        margin-bottom: 30px;
+    }
+    #spotlight.condition header .head-main {
+        align-items: center;
+    }
+}
+@media all and (max-width: 420px) {
+    p.black {
+        font-size: 15px;
+    }
+    .contents .wrapper .container .inner-container p {
+        width: 94%;
+    }
+    p.grey {
+        font-size: 13px;
+    }
+}

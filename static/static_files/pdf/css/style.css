@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Baloo Paaji 2 Bold';
+  src: url('../fonts/BalooPaaji2-Bold.woff2') format('woff2'),
+      url('../fonts/BalooPaaji2-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Paaji 2 Regular';
+  src: url('../fonts/BalooPaaji2-Regular.woff2') format('woff2'),
+      url('../fonts/BalooPaaji2-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Paaji 2 Medium';
+  src: url('../fonts/BalooPaaji2-Medium.woff2') format('woff2'),
+      url('../fonts/BalooPaaji2-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Paaji 2 Semibold';
+  src: url('../fonts/BalooPaaji2-SemiBold.woff2') format('woff2'),
+      url('../fonts/BalooPaaji2-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+table{
+  /* border: 1px solid blue; */
+  border-collapse: collapse;
+}
+td.vert{
+  border-collapse: baseline;
+}
+td{
+  /* border: 1px solid red; */
+  vertical-align:middle;
+}
+.log{
+  width: 100%;
+  margin-top: -80px;
+}
+.fit{
+  width: 10%;
+}
+h3{
+  text-align: center;
+  padding: 10px;
+}
+td.head {
+  text-align: right;
+  font-size: 30px;
+  font-family: 'Baloo Paaji 2 Bold';
+}
+ th,td.bold{
+  font-family: 'Baloo Paaji 2 Semibold';
+  font-size: 15px;
+}
+body{
+  font-family: 'Baloo Paaji 2 Regular';
+  font-size: 15px;
+}
+td.name{
+  font-family: 'Baloo Paaji 2 Semibold';
+  color: #585654;
+}
+.reg{
+  color: #a09c9a;
+}
+.desc{
+  font-family: 'Baloo Paaji 2 Semibold';
+  color: #585654;
+  opacity: 0.6;
+}

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% load users_template_tags %}
+{% load tz %}
+{% block content %}
+<section id="content">
+  <div class="container">
+    <div class="c-header">
+      <h2>{{title}}</h2>
+    </div>
+
+    <div class="action-header palette-theme {{current_theme}} bg clearfix">
+      <div class="ah-label hidden-xs palette-White text">{{instance.section}}</div>
+
+      <ul class="ah-actions actions a-alt">
+        <li>
+          <a class="action-button redirect" data-id="{{instance.pk}}" data-text="Are you sure to mark this enquiry as mark as read"
+             data-title="Are you sure?" href="{% url 'promotions:mark_as_read' pk=instance.pk %}"
+             title="Delete PV">
+            <i class="zmdi zmdi-check-circle"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header">
+            <h2>Customer Info <small></small></h2>
+          </div>
+          <div class="card-body">
+            <div class="list-group lg-alt c-overflow">
+
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Name</div>
+                  <small class="lgi-text">{{instance.enquirer_name}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Phone</div>
+                  <small class="lgi-text">{{instance.enquirer_phone}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Reciever Name</div>
+                  <small class="lgi-text">{{instance.gift_reciever_name}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Reciever Phone</div>
+                  <small class="lgi-text">{{instance.gift_reciever_phone}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Event Name</div>
+                  <small class="lgi-text">{{instance.event_name}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Event Date</div>
+                  <small class="lgi-text">{{instance.event_date}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Additional Note</div>
+                  <small class="lgi-text">{{instance.additional_notes}}</small>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Source</div>
+                  <small class="lgi-text">{{instance.source}}</small>
+                </div>
+              </div>
+
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Enquiry Id</div>
+                  <small class="lgi-text">{{instance.enquiry_id}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header">
+            <h2>Product Info <small></small></h2>
+          </div>
+          <div class="card-body">
+            <div class="list-group lg-alt c-overflow">
+              
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading"></div>
+                  <small class="lgi-text">
+                    <img src="{{product_image.feautured_image.url}}"  style="width:100%" alt="">
+                  </small>
+                </div>
+              </div>
+
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <h1 style="text-align:center">{{instance.product}}</h1>
+                </div>
+              </div>
+              <div class="list-group-item media">
+                <div class="media-body">
+                  <div class="lgi-heading">Price</div>
+                  <small class="lgi-text">{{instance.product.price}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+</section>
+{% endblock %}
+
+{% block static %}
+{% load static %}
+{% endblock %}

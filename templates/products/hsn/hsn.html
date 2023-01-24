@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% load users_template_tags %}
+{% load tz %}
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{instance.section}}</div>
+
+            <ul class="ah-actions actions a-alt">
+                <li>
+                    <a href="{% url 'products:create_hsn' %}" title="Create PI">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'products:edit_hsn' pk=instance.pk %}" title="Edit UOM">
+                        <i class="zmdi zmdi-edit"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'products:delete_hsn' pk=instance.pk %}"
+                       title="Delete UOM">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix" data-columns="2" id="c-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Basic Info <small></small></h2>
+                </div>
+                <div class="card-body">
+                    <div class="list-group lg-alt c-overflow">
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Tyype</div>
+                                <small class="lgi-text">{{instance.type}}</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Description</div>
+                                <small class="lgi-text">{{instance.description}}</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">COde</div>
+                                <small class="lgi-text">{{instance.code}}</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">IGST</div>
+                                <small class="lgi-text">{{instance.igst_rate}}</small>
+                            </div>
+                        </div>
+
+                      <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">SGST</div>
+                                <small class="lgi-text">{{instance.sgst_rate}}</small>
+                            </div>
+                        </div>
+
+                      <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">CGST</div>
+                                <small class="lgi-text">{{instance.cgst_rate}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
+
+{% block static %}
+{% load static %}
+{% endblock %}

@@ -1,0 +1,11 @@
+[
+  {
+    "model": "general.Extras",
+    "pk": 1,
+    "fields": {
+      "inter_state_charges": 1,
+      "intra_state_charges": 1,
+      "special_discount": 1
+    }
+  }
+]

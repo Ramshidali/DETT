@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Baloo Paaji 2 Bold';
+    src: url('../fonts/BalooPaaji2-Bold.woff2') format('woff2'),
+        url('../fonts/BalooPaaji2-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Baloo Paaji 2 Regular';
+    src: url('../fonts/BalooPaaji2-Regular.woff2') format('woff2'),
+        url('../fonts/BalooPaaji2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Baloo Paaji 2 Medium';
+    src: url('../fonts/BalooPaaji2-Medium.woff2') format('woff2'),
+        url('../fonts/BalooPaaji2-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Baloo Paaji 2 Semibold';
+    src: url('../fonts/BalooPaaji2-SemiBold.woff2') format('woff2'),
+        url('../fonts/BalooPaaji2-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  h2{
+    font-family: 'Baloo Paaji 2 Semibold';
+  }
+  p.bold{
+    font-family: 'Baloo Paaji 2 Medium';
+    font-size: 15px;
+  }
+  p.regular{
+    font-family: 'Baloo Paaji 2 Regular';
+    font-size: 15px;
+    color: #a09c9a;
+  }
+  p.rs{
+    font-family: 'Baloo Paaji 2 Regular';
+    color: #42423f;
+    font-size: 15px;
+  }
+  p.name{
+    font-family: 'Baloo Paaji 2 Medium';
+    color: #585654;
+  }
+  h4{
+    font-family: 'Baloo Paaji 2 Medium';
+    font-size: 16px;
+  }
+  h4.op{
+    color: #a1a1a1;
+  }
+  p{
+    font-family: 'Baloo Paaji 2 Regular';
+   color: #6b6b6b;
+  }
+  p.tx{
+    color: #a1a1a1;
+    font-size: 15px;
+  }
+  h4.tx{
+    color: #a1a1a1;
+    font-size: 14px;
+  }
+  p.tot{
+    font-size: 15px;
+    font-family: 'Baloo Paaji 2 Medium';
+    color: #383737;
+  }
+  p.amt{
+    font-family: 'Baloo Paaji 2 Medium';
+    font-size: 17px;
+  }
+
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+  }
+
+.d-inline-block{
+    display: inline-block  !important;
+}
+
+.m-52{
+    margin-right: 52% !important;
+}

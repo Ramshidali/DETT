@@ -1,0 +1,98 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+
+{% block content %}
+
+{%include 'web/include/navbar.html' %}
+
+
+    <div class="profileContainer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="profileHead">
+                    <div class="profile-top">
+                        <div class="profile-photo">
+                            <img src="{% static 'web/images/icons/profile pic.jpg' %}" alt="" class="photo">
+                        </div>
+                        <div class="right">
+                            <h2 class="name">{{profile_instance.name}}</h2>
+                            <h3 class="phone">{{profile_instance.phone}}</h3>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tabCover active">
+                            <button class="profile" onclick="profiletab(event, 'ProfileAddress')">Address </button>
+                        </div>
+                        <div class="tabCover">
+                            <button class="profile" id="myOrderBtn" onclick="profiletab(event, 'ProfileOrder')">My Orders</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profileBottom">
+                    <div id="ProfileAddress" class="profiletabcontent">
+
+                        {% for address in profile_address %}
+                        <div class="card">
+                            <div class="left">
+                                <h6>{% if address.address_type == "office" %}<i class="zmdi zmdi-card-travel address-type">{% else %}<i class="zmdi zmdi-home address-type">{% endif %}</i>{{address.name}} {% if address.is_default %}<span>(Default)</span>{% endif %}</h6>
+                                <p class="addrsss_p_profile">{{address.address_line1}}, {{address.street}}, {{address.city}}, {{address.landmark}}, {{address.state}}, {{address.pincode}}
+                                </p>
+                            </div>
+                            <div class="commonGradient addressChange_bt" data-url="{% url 'web:edit_address' pk=address.pk %}" data-update_url="{% url 'web:update_address' pk=address.pk %}" id="btn{{address.pk}}" onclick="edit_address('{{address.pk}}')">
+                                <div class="cover">
+                                    <h6>Edit</h6>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        <div class="card">
+                            <a href="#" class="add_adress_btn" id="addAddressBtn">+ Add Address</a>
+                        </div>
+
+                    </div>
+
+                    <div id="ProfileOrder" class="profiletabcontent" style="display: none !important;">
+                        
+                        <div class="order-cards">
+                            {% for order in my_orders %}
+                            <div class="order-card">
+                                <div class="left">
+                                    <h3 class="order-id">#{{order.order.invoice_id}}</h3>
+                                    <h4 class="order-name">{{order.product_variant.product.name}}</h4>
+                                    <h4 class="sub-text">{{order.product_variant.title}}</h4>
+                                    <span class="cost">&#8377; {{order.order.total_amt}}</span>
+                                </div>
+                                <div class="left">
+                                    <span class="date">{{order.order.date_added|date:"d/m/Y"}}</span>
+                                    <div class="button">{{order.order.get_order_status_display}} <img src="{% static 'web/images/icons/arrow.svg' %}" alt="" class="arrow">
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </section> -->
+    <script type="text/javascript">
+        function profiletab(evt, cityName) {
+            var i, profiletabcontent, profile;
+            profiletabcontent = document.getElementsByClassName("profiletabcontent");
+            for (i = 0; i < profiletabcontent.length; i++) {
+                profiletabcontent[i].style.display = "none";
+            }
+            profile = document.getElementsByClassName("profile");
+            for (i = 0; i < profile.length; i++) {
+                profile[i].className = profile[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+{% endblock %}
+
+    

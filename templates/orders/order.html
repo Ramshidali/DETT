@@ -1,0 +1,312 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% load users_template_tags %}
+{% load order_template_tags %}
+{% load tz %}
+{% block content %}
+
+
+<style>
+  .custom{
+      background:red;
+      height:60vh;
+  }
+
+  .text-white{
+    color:white;
+  }
+</style>
+
+<section id="content">
+  <div class="container">
+    <div class="c-header">
+      <h2>{{title}}</h2>
+    </div>
+
+    <div class="action-header palette-theme {{current_theme}} bg clearfix">
+      <div class="ah-label hidden-xs palette-White text">{{instance.section}}</div>
+
+      <ul class="ah-actions actions a-alt">
+        <!--        <li>-->
+        <!--          <a href="{% url 'products:create_product' %}" title="Create Service">-->
+        <!--            <i class="zmdi zmdi-plus"></i>-->
+        <!--          </a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--          <a href="{% url 'products:edit_product' pk=instance.pk %}" title="Edit Event">-->
+        <!--            <i class="zmdi zmdi-edit"></i>-->
+        <!--          </a>-->
+        <!--        </li>-->
+        <!--        <li>-->
+        <!--          <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"-->
+        <!--             data-title="Are you sure?" href="" title="Delete Event">-->
+        <!--            <i class="zmdi zmdi-delete"></i>-->
+        <!--          </a>-->
+        <!--        </li>-->
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="clearfix">
+          <div class="card">
+            <div class="card-header">
+              <h2>Basic Info <small></small></h2>
+            </div>
+
+            <div class="card-body">
+              <div class="list-group lg-alt c-overflow">
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Order Name</div>
+                    <small class="lgi-text">{{instance.billing_name}}</small>
+                  </div>
+                </div>
+
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Phone</div>
+                    <small class="lgi-text">{{instance.billing_phone}}</small>
+                  </div>
+                </div>
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Amount</div>
+                    <small class="lgi-text">{% get_order_total instance.pk %}</small>
+                  </div>
+                </div>
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Address</div>
+                    <small class="lgi-text">{{instance.billing_address}}</small>
+                  </div>
+                </div>
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">City</div>
+                    <small class="lgi-text">{{instance.billing_city}}</small>
+                  </div>
+                </div>
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">State</div>
+                    <small class="lgi-text">{{instance.billing_state}}</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% if instance.order_status == '0' %}
+
+      <div class="col-md-6">
+        <div class="clearfix">
+          <div class="card">
+            <div class="card-header custom">
+              <h2 class="text-white">Order Status<small></small></h2>
+              <h1 class="text-white">Order Cancelled</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% else %}
+
+      <div class="col-md-6">
+        <div class="clearfix">
+          <div class="card">
+            <div class="card-header">
+              <h2>Order Status<small></small></h2>
+            </div>
+
+            <div class="card-body">
+              <div class="list-group lg-alt c-overflow">
+                {% for o in order_status  %}
+                  {% if o.status == 10 %}
+                <div class="list-group-item media">
+
+                  <div class="media-body">
+                    <div class="lgi-heading">Ordered</div>
+                  </div>
+                </div>
+
+                  {% elif  o.status == 20 %}
+
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Packed</div>
+                  </div>
+                </div>
+
+                  {% elif  o.status == 30 %}
+
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Shipped</div>
+                  </div>
+                </div>
+
+                  {% elif  o.status == 40 %}
+
+
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Out For delivery</div>
+                  </div>
+                </div>
+
+                  {% elif  o.status == 50 %}
+
+
+
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <div class="lgi-heading">Delivered</div>
+                  </div>
+                </div>
+
+                  {% endif %}
+                {% endfor %}
+                <div class="list-group-item media">
+                  <div class="media-body">
+                    <form action="{{url}}" class="ajax reset {% if redirect %}redirect{% endif %}" method="post">
+                        {% csrf_token %}
+                      <div>
+
+                        {% if instance.order_status == '10' %}
+                        <div>
+                          <p>Ordered</p>
+                          <p></p>
+                        </div>
+                        {% elif instance.order_status == '20' %}
+                        <div class="d-flex">
+                          <span class="mr-2 ">Ordered</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Packed</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        {% elif instance.order_status == '30' %}
+                        <div class="d-flex">
+                          <span class="mr-2 ">Ordered</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Packed</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                      <div class="d-flex">
+                          <span class="mr-2 ">Shipped</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+
+                         {% elif instance.order_status == '40' %}
+                        <div class="d-flex">
+                          <span class="mr-2 ">Ordered</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Packed</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Shipped</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Out For Delivery</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        {% elif instance.order_status == '50' %}
+                        <div class="d-flex">
+                          <span class="mr-2 ">Ordered</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Packed</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Shipped</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Out For Delivery</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        <div class="d-flex">
+                          <span class="mr-2 ">Delivered</span>
+                           <i class="zmdi zmdi-check-square text-success"></i>
+                        </div>
+                        {% endif %}
+
+                          {% if  instance.order_status != '0' and instance.order_status != '50' %}
+                        <button class="btn btn-info waves-effect" type="submit">
+                             {% if instance.order_status == '10' %}
+                                Tap for Packed
+                            {% elif instance.order_status == '20' %}
+                                Tap for Shipped
+                            {% elif instance.order_status == '30' %}
+                                Tap for Out For Delivery
+                            {% elif instance.order_status == '40' %}
+                                Tap Delivered
+                             {% endif %}
+                        </button>
+                          {% endif %}
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endif %}
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        {% if order_items %}
+        <div class="card col-12">
+          <div class="card-header">
+            <h2>Items <small></small></h2>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-vmiddle" id="data-table-basic">
+                <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>qty</th>
+                  <th>price</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for i in order_items %}
+                <tr>
+                  <td>{{i.product_variant.get_full_name}}</td>
+                  <td>{{i.qty}}</td>
+                  <td> {% widthratio i.qty 1 i.price %}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+</section>
+{% endblock %}
+
+{% block static %}
+{% load static %}
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+
+{% load users_template_tags %}
+{% load tz %}
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{instance.section}}</div>
+
+            <ul class="ah-actions actions a-alt">
+                <li>
+                    <a href="{% url 'general:create_slider' %}" title="Create PI">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'general:edit_slider' pk=instance.pk %}" title="Edit UOM">
+                        <i class="zmdi zmdi-edit"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'general:delete_slider' pk=instance.pk %}"
+                       title="Delete UOM">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix" data-columns="2" id="c-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Basic Info <small></small></h2>
+                </div>
+                <div class="card-body">
+                    <div class="list-group lg-alt c-overflow">
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                  {% if instance.image %}
+                            <img height="100" src="{{instance.image.thumbnail.400x400 }}"
+                                 style="object-fit:cover" >
+                            {% else %}
+                              <img height="100" src="{% static 'img/no.jpg' %}"
+                                 style="object-fit:cover" >
+                            {% endif %}
+
+
+                            </div>
+                        </div>
+                        <div class="list-group-item media">
+                            <div class="media-body">
+                                <div class="lgi-heading">Title</div>
+                                <small class="lgi-text">{{instance.title}}</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
+
+{% block static %}
+{% endblock %}

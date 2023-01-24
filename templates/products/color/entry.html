@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{title}}</div>
+
+            <div class="ah-search">
+                <form action="" method="get">
+                    <input class="ahs-input" name="q" placeholder="Start typing..." type="text">
+
+                    <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+                    <input class="hidden" type="submit"/>
+                </form>
+            </div>
+
+            <ul class="ah-actions actions a-alt">
+
+                {% if instance %}
+                <li>
+                    <a href="{% url 'products:create_color' %}" title="Create Unit">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'products:delete_color' pk=instance.pk %}"
+                       title="Delete Unit">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <form action="{{url}}" class="ajax reset {% if redirect %}redirect{% endif %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.color.id_for_label }}">
+                                    {{ form.color.label }}
+                                    {% if form.color.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.color.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.color.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.color }}
+
+                                {% if form.color.errors %}
+                                <label class="error">{{ form.color.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-info waves-effect" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+{% block static %}
+{% load static %}
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('input[type=text]').focus(function () {
+	        $(this).select();
+	    		});
+		  });
+
+
+
+
+</script>
+{{ form.media }}
+{% endblock %}

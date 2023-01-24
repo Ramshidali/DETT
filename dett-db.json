@@ -1,0 +1,5138 @@
+[
+{
+    "model": "products.productcolor",
+    "pk": "050634e6-bc18-4f97-8dd9-e279a52cb15e",
+    "fields": {
+        "date_added": "2022-08-17T08:09:01.424Z",
+        "is_deleted": false,
+        "color": "Gray"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "2b886cf2-8ed3-419c-84be-06c382a37a96",
+    "fields": {
+        "date_added": "2022-05-20T06:50:38.523Z",
+        "is_deleted": true,
+        "color": "Black"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "7085730b-49df-40ab-b1eb-a90deac235c5",
+    "fields": {
+        "date_added": "2022-07-02T06:42:04.872Z",
+        "is_deleted": false,
+        "color": "blue and white"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "7e8d380c-2d79-42a9-946b-ea3040f7728e",
+    "fields": {
+        "date_added": "2022-07-28T11:21:43.112Z",
+        "is_deleted": false,
+        "color": "Black"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "89d2c951-c0d7-42db-bbdc-b798489989f1",
+    "fields": {
+        "date_added": "2022-07-02T07:12:42.243Z",
+        "is_deleted": false,
+        "color": "black"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "8e7fc421-b4a2-467f-a071-0ca609f5e517",
+    "fields": {
+        "date_added": "2022-08-17T05:46:32.554Z",
+        "is_deleted": false,
+        "color": "Blue"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "a22213bd-53d1-47c9-b06d-60dade80caee",
+    "fields": {
+        "date_added": "2022-06-24T05:41:44.579Z",
+        "is_deleted": false,
+        "color": "Blue And Black"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "afc0a98a-3b61-42f2-9f56-332ba3667311",
+    "fields": {
+        "date_added": "2022-05-23T07:18:26.302Z",
+        "is_deleted": true,
+        "color": "Grey"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "b1de68f3-edd3-4be4-96db-5187f45794c9",
+    "fields": {
+        "date_added": "2022-05-20T06:37:33.217Z",
+        "is_deleted": true,
+        "color": "Sky blue"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "da498524-1df0-479f-ba51-ea10ce6414b3",
+    "fields": {
+        "date_added": "2022-07-02T06:15:43.543Z",
+        "is_deleted": false,
+        "color": "pink"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "e241c4b5-3f17-436b-9af2-f1ad3b1f2535",
+    "fields": {
+        "date_added": "2022-07-02T07:39:31.222Z",
+        "is_deleted": false,
+        "color": "rose"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "ec117194-fccc-4d7f-b5dc-94ec7aa8606d",
+    "fields": {
+        "date_added": "2022-05-23T07:02:26.968Z",
+        "is_deleted": true,
+        "color": "Red"
+    }
+},
+{
+    "model": "products.productcolor",
+    "pk": "ff2da6a0-c8c7-4ba6-b71a-d4a18ae5e9ed",
+    "fields": {
+        "date_added": "2022-08-17T05:33:34.284Z",
+        "is_deleted": false,
+        "color": "Red"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "0466d0fb-7ba4-44b0-adf2-4c4368a72b59",
+    "fields": {
+        "date_added": "2022-07-02T07:38:32.031Z",
+        "is_deleted": false,
+        "brand": "Quality Street"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "16926303-8d70-4823-93fa-7349f20a2b9b",
+    "fields": {
+        "date_added": "2022-08-17T08:08:51.694Z",
+        "is_deleted": false,
+        "brand": "Base"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "35cfe926-ccbc-4534-b160-aa9ce4a61870",
+    "fields": {
+        "date_added": "2022-07-28T11:21:23.313Z",
+        "is_deleted": false,
+        "brand": "Boat"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "40121c21-6524-4b17-ac07-24294902a5f6",
+    "fields": {
+        "date_added": "2022-05-23T07:18:08.807Z",
+        "is_deleted": true,
+        "brand": "Skullcandy"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "432a6986-19b0-4054-b89e-6c77c7948a03",
+    "fields": {
+        "date_added": "2022-06-24T05:41:08.979Z",
+        "is_deleted": false,
+        "brand": "Remax"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "4e56b332-a9a3-4de2-b834-deb855bcd5e3",
+    "fields": {
+        "date_added": "2022-07-02T07:12:22.139Z",
+        "is_deleted": false,
+        "brand": "Stereo"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "5c34facb-faaf-41ed-9635-08b72a6a1873",
+    "fields": {
+        "date_added": "2022-07-02T07:28:24.634Z",
+        "is_deleted": false,
+        "brand": "Skullcandy"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "5cfa664e-08d7-48c4-acd4-9385d81b53cc",
+    "fields": {
+        "date_added": "2022-05-20T07:06:38.618Z",
+        "is_deleted": true,
+        "brand": "Conekt"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "a43c03b1-aecd-494f-ac6d-849a04fb4e4a",
+    "fields": {
+        "date_added": "2022-08-17T05:33:23.935Z",
+        "is_deleted": false,
+        "brand": "Perfume Spray"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "a62a27ed-57e3-45e2-86e2-bb95246a5c04",
+    "fields": {
+        "date_added": "2022-08-17T05:46:18.126Z",
+        "is_deleted": false,
+        "brand": "figers"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "a8a2f180-ac3c-46d4-b503-0d51a35e28b1",
+    "fields": {
+        "date_added": "2022-05-20T06:37:18.497Z",
+        "is_deleted": true,
+        "brand": "Jbl"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "ab1914f1-6b9f-449a-b90d-2bc2d7fdaa2a",
+    "fields": {
+        "date_added": "2022-05-31T06:33:17.880Z",
+        "is_deleted": true,
+        "brand": "Remax"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "ab7987a5-c3ad-48e3-a113-dbce44e8e221",
+    "fields": {
+        "date_added": "2022-05-20T06:50:28.399Z",
+        "is_deleted": true,
+        "brand": "GDOT"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "ba72d251-e10a-481c-ae8d-436b530b4aaf",
+    "fields": {
+        "date_added": "2022-05-23T07:02:07.172Z",
+        "is_deleted": true,
+        "brand": "Hapi Pola"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "e2e34ac8-15ff-4bd5-9faf-6eb3ab723998",
+    "fields": {
+        "date_added": "2022-07-02T06:41:41.831Z",
+        "is_deleted": false,
+        "brand": "shoe"
+    }
+},
+{
+    "model": "products.brand",
+    "pk": "eaade770-de91-4918-a2e7-09f7e6b7317e",
+    "fields": {
+        "date_added": "2022-07-02T06:15:26.956Z",
+        "is_deleted": false,
+        "brand": "Hamper"
+    }
+},
+{
+    "model": "general.mode",
+    "pk": 1,
+    "fields": {
+        "readonly": false,
+        "maintenance": false,
+        "down": false
+    }
+},
+{
+    "model": "users.notificationsubject",
+    "pk": 1,
+    "fields": {
+        "code": "low_stock_notification",
+        "name": "Low stock notification"
+    }
+},
+{
+    "model": "users.notificationsubject",
+    "pk": 2,
+    "fields": {
+        "code": "task_assigned",
+        "name": "Task Assigned"
+    }
+},
+{
+    "model": "users.notificationsubject",
+    "pk": 3,
+    "fields": {
+        "code": "expiry_notification",
+        "name": "Expiry Notification"
+    }
+},
+{
+    "model": "users.notificationsubject",
+    "pk": 4,
+    "fields": {
+        "code": "sale_payment_reminder",
+        "name": "Sale Payment Remainder"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Manage Customer",
+        "code": "can_manage_customer",
+        "app": "customers"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Create Customer",
+        "code": "can_create_customer",
+        "app": "customers"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Modify Customer",
+        "code": "can_modify_customer",
+        "app": "customers"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 4,
+    "fields": {
+        "name": "View Customer",
+        "code": "can_view_customer",
+        "app": "customers"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Delete Customer",
+        "code": "can_delete_customer",
+        "app": "customers"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Create Category",
+        "code": "can_create_category",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Modify Category",
+        "code": "can_modify_category",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 8,
+    "fields": {
+        "name": "View Category",
+        "code": "can_view_category",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Delete Category",
+        "code": "can_delete_category",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Create Unit",
+        "code": "can_create_unit",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Modify Unit",
+        "code": "can_modify_unit",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 12,
+    "fields": {
+        "name": "View Unit",
+        "code": "can_view_unit",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Delete Unit",
+        "code": "can_delete_unit",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Manage Barcode",
+        "code": "can_manage_barcode",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Manage Vendor",
+        "code": "can_manage_vendor",
+        "app": "vendors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Create vendor",
+        "code": "can_create_vendor",
+        "app": "vendors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Modify Vendor",
+        "code": "can_modify_vendor",
+        "app": "vendors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 18,
+    "fields": {
+        "name": "View Vendor",
+        "code": "can_view_vendor",
+        "app": "vendors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Manage Product",
+        "code": "can_manage_product",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Create Product",
+        "code": "can_create_product",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Modify Product",
+        "code": "can_modify_product",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 22,
+    "fields": {
+        "name": "View Product",
+        "code": "can_view_product",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Delete Product",
+        "code": "can_delete_product",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Manage Sale",
+        "code": "can_manage_sale",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Create Sale",
+        "code": "can_create_sale",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Modify Sale",
+        "code": "can_modify_sale",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 27,
+    "fields": {
+        "name": "View Sale",
+        "code": "can_view_sale",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Delete Sale",
+        "code": "can_delete_sale",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Create Designation",
+        "code": "can_create_designation",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Modify Designation",
+        "code": "can_modify_designation",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 31,
+    "fields": {
+        "name": "View Designation",
+        "code": "can_view_designation",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Manage Staff",
+        "code": "can_manage_staff",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Create Staff",
+        "code": "can_create_staff",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Modify Staff",
+        "code": "can_modify_staff",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 35,
+    "fields": {
+        "name": "View Staff",
+        "code": "can_view_staff",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Delete Staff",
+        "code": "can_delete_staff",
+        "app": "staffs"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Manage Purchase",
+        "code": "can_manage_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Create Purchase",
+        "code": "can_create_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Modify Purchase",
+        "code": "can_modify_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 40,
+    "fields": {
+        "name": "View Purchase",
+        "code": "can_view_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Delete Purchase",
+        "code": "can_delete_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Delete Vendor",
+        "code": "can_delete_vendor",
+        "app": "vendors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 43,
+    "fields": {
+        "name": " Manage User",
+        "code": "can_manage_user",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Create User",
+        "code": "can_create_user",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Modify User",
+        "code": "can_modify_user",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 47,
+    "fields": {
+        "name": "View User",
+        "code": "can_view_user",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Delete User",
+        "code": "can_delete_user",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Change User Permissions",
+        "code": "can_change_user_permissions",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Change Password",
+        "code": "can_change_password",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Create profile",
+        "code": "can_create_profile",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Modify profile",
+        "code": "can_modify_profile",
+        "app": "users"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Create Collect Amount",
+        "code": "can_create_collect_amount",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Modify Collect Amount",
+        "code": "can_modify_collect_amount",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 55,
+    "fields": {
+        "name": "View Collect Amount",
+        "code": "can_view_collect_amount",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Delete Collect Amount",
+        "code": "can_delete_collect_amount",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Create Paid",
+        "code": "can_create_paid",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Modify Paid",
+        "code": "can_modify_paid",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 59,
+    "fields": {
+        "name": "View Paid",
+        "code": "can_view_paid",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Delete Paid",
+        "code": "can_delete_paid",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Manage Finance",
+        "code": "can_manage_finance",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Create Bank Account",
+        "code": "can_create_bank_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Modify Bank Account",
+        "code": "can_modify_bank_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 64,
+    "fields": {
+        "name": "View Bank Account",
+        "code": "can_view_bank_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Delete Bank Account",
+        "code": "can_delete_bank_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Create Cash Account",
+        "code": "can_create_cash_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Modify Cash Account",
+        "code": "can_modify_cash_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 68,
+    "fields": {
+        "name": "View Cash Account",
+        "code": "can_view_cash_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Delete Cash Account",
+        "code": "can_delete_cash_account",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Create Income",
+        "code": "can_create_income",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Modify Income",
+        "code": "can_modify_income",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Delete Income",
+        "code": "can_delete_income",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Create Expense",
+        "code": "can_create_expense",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Modify Expense",
+        "code": "can_modify_expense",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Delete Expense",
+        "code": "can_delete_expense",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 76,
+    "fields": {
+        "name": "View Transaction",
+        "code": "can_view_transaction",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Delete Transaction",
+        "code": "can_delete_transaction",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Create Transaction Category",
+        "code": "can_create_transaction_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Modify Transaction Category",
+        "code": "can_modify_transaction_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 80,
+    "fields": {
+        "name": "View Transaction Category",
+        "code": "can_view_transaction_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Delete Transaction Category",
+        "code": "can_delete_transaction_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Create Staff Payment",
+        "code": "can_create_staff_payment",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Modify Staff Paymentt",
+        "code": "can_modify_staff_payment",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 84,
+    "fields": {
+        "name": "View Staff Payment",
+        "code": "can_view_staff_payment",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 85,
+    "fields": {
+        "name": "Delete Staff Payment",
+        "code": "can_delete_staff_payment",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 86,
+    "fields": {
+        "name": "Create Sale Return",
+        "code": "can_create_sale_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 87,
+    "fields": {
+        "name": "Modify Sale Return",
+        "code": "can_modify_sale_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 88,
+    "fields": {
+        "name": "View Sale Return",
+        "code": "can_view_sale_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 89,
+    "fields": {
+        "name": "Delete Sale Return",
+        "code": "can_delete_sale_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 90,
+    "fields": {
+        "name": "Create Damaged product",
+        "code": "can_create_damaged_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 91,
+    "fields": {
+        "name": "Modify Damaged product",
+        "code": "can_modify_damaged_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 92,
+    "fields": {
+        "name": "View Damaged product",
+        "code": "can_view_damaged_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 93,
+    "fields": {
+        "name": "Delete Damaged product",
+        "code": "can_delete_damaged_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 94,
+    "fields": {
+        "name": "Create Returnable Product",
+        "code": "can_create_returnable_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 95,
+    "fields": {
+        "name": "Modify Returnable Product",
+        "code": "can_modify_returnable_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 96,
+    "fields": {
+        "name": "View Returnable Product",
+        "code": "can_view_returnable_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 97,
+    "fields": {
+        "name": "Delete Returnable Product",
+        "code": "can_delete_returnable_product",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 98,
+    "fields": {
+        "name": "Create Customer Payment",
+        "code": "can_create_customer_payment",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 99,
+    "fields": {
+        "name": "Modify Customer Payment",
+        "code": "can_modify_customer_payment",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 100,
+    "fields": {
+        "name": "View Customer Payment",
+        "code": "can_view_customer_payment",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 101,
+    "fields": {
+        "name": "Delete Customer Payment",
+        "code": "can_delete_customer_payment",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 102,
+    "fields": {
+        "name": "Create Product Return",
+        "code": "can_create_product_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 103,
+    "fields": {
+        "name": "Modify Product Return",
+        "code": "can_modify_product_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 104,
+    "fields": {
+        "name": "View Product Return",
+        "code": "can_view_product_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 105,
+    "fields": {
+        "name": "Delete Product Return",
+        "code": "can_delete_product_return",
+        "app": "sales"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 106,
+    "fields": {
+        "name": "Create Collect Amounts",
+        "code": "can_create_collect_amounts",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 107,
+    "fields": {
+        "name": "Modify Collect Amounts",
+        "code": "can_modify_collect_amounts",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 108,
+    "fields": {
+        "name": "View Collect Amounts",
+        "code": "can_view_collect_amounts",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 109,
+    "fields": {
+        "name": "Delete Collect Amounts",
+        "code": "can_delete_collect_amounts",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 110,
+    "fields": {
+        "name": "Create Sub Category",
+        "code": "can_create_subcategory",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 111,
+    "fields": {
+        "name": "Modify Sub Category",
+        "code": "can_modify_subcategory",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 112,
+    "fields": {
+        "name": "View Sub Category",
+        "code": "can_view_subcategory",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 113,
+    "fields": {
+        "name": "Delete Sub Category",
+        "code": "can_delete_subcategory",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 114,
+    "fields": {
+        "name": "Create Brand",
+        "code": "can_create_brand",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 115,
+    "fields": {
+        "name": "Modify Brand",
+        "code": "can_modify_brand",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 116,
+    "fields": {
+        "name": "View Brand",
+        "code": "can_view_brand",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 117,
+    "fields": {
+        "name": "Delete Brand",
+        "code": "can_delete_brand",
+        "app": "products"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 118,
+    "fields": {
+        "name": "Create Purchase Invoice",
+        "code": "can_create_purchase_invoice",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 119,
+    "fields": {
+        "name": "Modify Purchase Invoice",
+        "code": "can_modify_purchase_invoice",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 120,
+    "fields": {
+        "name": "View Purchase Invoice",
+        "code": "can_view_purchase_invoice",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 121,
+    "fields": {
+        "name": "Delete Purchase Invoice",
+        "code": "can_delete_purchase_invoice",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 122,
+    "fields": {
+        "name": "Create Tax Category",
+        "code": "can_create_tax_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 123,
+    "fields": {
+        "name": "Modify Tax Category",
+        "code": "can_modify_tax_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 124,
+    "fields": {
+        "name": "View Tax Category",
+        "code": "can_view_tax_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 125,
+    "fields": {
+        "name": "Delete Tax Category",
+        "code": "can_delete_tax_category",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 126,
+    "fields": {
+        "name": "Manage Web",
+        "code": "can_manage_web",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 127,
+    "fields": {
+        "name": "Create About",
+        "code": "can_create_about",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 128,
+    "fields": {
+        "name": "Modify About",
+        "code": "can_modify_about",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 129,
+    "fields": {
+        "name": "View About",
+        "code": "can_view_about",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 130,
+    "fields": {
+        "name": "Delete About",
+        "code": "can_delete_about",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 131,
+    "fields": {
+        "name": "Create Product Category",
+        "code": "can_create_product_category",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 132,
+    "fields": {
+        "name": "Modify Product Category",
+        "code": "can_modify_product_category",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 133,
+    "fields": {
+        "name": "View Product Category",
+        "code": "can_view_product_category",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 134,
+    "fields": {
+        "name": "Delete Product Category",
+        "code": "can_delete_product_category",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 135,
+    "fields": {
+        "name": "Create Offer",
+        "code": "can_create_offer",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 136,
+    "fields": {
+        "name": "Modify Offer",
+        "code": "can_modify_offer",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 137,
+    "fields": {
+        "name": "View Offer",
+        "code": "can_view_offer",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 138,
+    "fields": {
+        "name": "Delete Offer",
+        "code": "can_delete_offer",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 139,
+    "fields": {
+        "name": "Create Offer",
+        "code": "can_create_web_product",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 140,
+    "fields": {
+        "name": "Modify Offer",
+        "code": "can_modify_web_product",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 141,
+    "fields": {
+        "name": "View Offer",
+        "code": "can_view_web_product",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 142,
+    "fields": {
+        "name": "Delete Offer",
+        "code": "can_delete_web_product",
+        "app": "web"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 143,
+    "fields": {
+        "name": "Create Asset",
+        "code": "can_create_asset_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 144,
+    "fields": {
+        "name": "Modify Asset",
+        "code": "can_modify_asset_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 145,
+    "fields": {
+        "name": "View Asset",
+        "code": "can_view_asset_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 146,
+    "fields": {
+        "name": "Delete Asset",
+        "code": "can_delete_asset_purchase",
+        "app": "purchases"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 147,
+    "fields": {
+        "name": "Manage Task",
+        "code": "can_manage_task",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 148,
+    "fields": {
+        "name": "Create Task",
+        "code": "can_create_task",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 149,
+    "fields": {
+        "name": "Modify Task",
+        "code": "can_modify_task",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 150,
+    "fields": {
+        "name": "View Task",
+        "code": "can_view_task",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 151,
+    "fields": {
+        "name": "Delete Task",
+        "code": "can_delete_task",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 152,
+    "fields": {
+        "name": "Create Reminder",
+        "code": "can_create_reminder",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 153,
+    "fields": {
+        "name": "Modify Reminder",
+        "code": "can_modify_reminder",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 154,
+    "fields": {
+        "name": "View Reminder",
+        "code": "can_view_reminder",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 155,
+    "fields": {
+        "name": "Delete Reminder",
+        "code": "can_delete_reminder",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 156,
+    "fields": {
+        "name": "Create Anniversary",
+        "code": "can_create_anniversary",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 157,
+    "fields": {
+        "name": "Modify Anniversary",
+        "code": "can_modify_anniversary",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 158,
+    "fields": {
+        "name": "View Anniversary",
+        "code": "can_view_anniversary",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 159,
+    "fields": {
+        "name": "Delete Anniversary",
+        "code": "can_delete_anniversary",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 160,
+    "fields": {
+        "name": "Create Holiday",
+        "code": "can_create_holiday",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 161,
+    "fields": {
+        "name": "Modify Holiday",
+        "code": "can_modify_holiday",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 162,
+    "fields": {
+        "name": "View Holiday",
+        "code": "can_view_holiday",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 163,
+    "fields": {
+        "name": "Delete Holiday",
+        "code": "can_delete_holiday",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 164,
+    "fields": {
+        "name": "View Events",
+        "code": "can_view_event",
+        "app": "tasks"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 165,
+    "fields": {
+        "name": "Manage Distributor",
+        "code": "can_manage_distributor",
+        "app": "distributors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 166,
+    "fields": {
+        "name": "Create Distributor",
+        "code": "can_create_distributor",
+        "app": "distributors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 167,
+    "fields": {
+        "name": "Modify Distributor",
+        "code": "can_modify_distributor",
+        "app": "distributors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 168,
+    "fields": {
+        "name": "View Distributor",
+        "code": "can_view_distributor",
+        "app": "distributors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 169,
+    "fields": {
+        "name": "Delete Distributor",
+        "code": "can_delete_distributor",
+        "app": "distributors"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 170,
+    "fields": {
+        "name": "Create Cash Transfer",
+        "code": "can_create_cash_transfer",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 171,
+    "fields": {
+        "name": "Modify Cash Transfer",
+        "code": "can_modify_cash_transfer",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 172,
+    "fields": {
+        "name": "View Cash Transfer",
+        "code": "can_view_cash_transfer",
+        "app": "finance"
+    }
+},
+{
+    "model": "users.permission",
+    "pk": 173,
+    "fields": {
+        "name": "Delete Cash Transfer",
+        "code": "can_delete_cash_transfer",
+        "app": "finance"
+    }
+},
+{
+    "model": "customers.customeraddress",
+    "pk": "0ac1a910-ffaf-4094-a7fb-e5f082e64b0c",
+    "fields": {
+        "date_added": "2022-07-27T06:52:33.031Z",
+        "is_deleted": false,
+        "customer": "5c4fe742-81f8-4c58-ba55-86d614b9c470",
+        "name": "Dheeraj C",
+        "address_line1": "Cheeppilatt house\r\nKakkodi post\r\nKayyunnimmal thazham",
+        "phone": "8547445521",
+        "pincode": "673611",
+        "street": "Cheeppilatt house",
+        "city": "Kakkodi",
+        "landmark": "kakkodi",
+        "state": "Kerala",
+        "address_type": "home",
+        "is_default": true
+    }
+},
+{
+    "model": "customers.customeraddress",
+    "pk": "0ad96bc0-1292-4de4-a96d-0d8607b46071",
+    "fields": {
+        "date_added": "2022-08-17T08:17:17.976Z",
+        "is_deleted": false,
+        "customer": "f1c1675d-304c-4b40-993a-cbe6c601205b",
+        "name": "shalu",
+        "address_line1": "pathickal house",
+        "phone": "9544668210",
+        "pincode": "685515",
+        "street": "kattapana",
+        "city": "katapana",
+        "landmark": "gycut",
+        "state": "kerala",
+        "address_type": "home",
+        "is_default": true
+    }
+},
+{
+    "model": "customers.customeraddress",
+    "pk": "10a3b012-0229-4b23-814d-66e9cf86910d",
+    "fields": {
+        "date_added": "2022-07-26T10:59:48.927Z",
+        "is_deleted": false,
+        "customer": "df2dd675-b802-460b-9881-571562d94fb0",
+        "name": "test",
+        "address_line1": "sghs",
+        "phone": "987654321",
+        "pincode": "686252",
+        "street": "szhh",
+        "city": "gags",
+        "landmark": "gahah",
+        "state": "gqgsg",
+        "address_type": "office",
+        "is_default": true
+    }
+},
+{
+    "model": "customers.customeraddress",
+    "pk": "ae8aeaf4-f02f-47a2-909b-9311e319112a",
+    "fields": {
+        "date_added": "2022-08-24T04:25:32.458Z",
+        "is_deleted": false,
+        "customer": "1dfda781-4fd8-4780-a162-d86dc77bb88e",
+        "name": "roz",
+        "address_line1": "5",
+        "phone": "8111820995",
+        "pincode": "680701",
+        "street": "ijk",
+        "city": "tst",
+        "landmark": "ijk",
+        "state": "kerala",
+        "address_type": "Home",
+        "is_default": true
+    }
+},
+{
+    "model": "customers.customeraddress",
+    "pk": "f6ae8956-079a-4b1a-a0e8-f09d0373f14f",
+    "fields": {
+        "date_added": "2022-08-24T08:10:33.181Z",
+        "is_deleted": false,
+        "customer": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc",
+        "name": "Shalu",
+        "address_line1": "417",
+        "phone": "9874563210",
+        "pincode": "678721",
+        "street": "Pathickal house, Nellippara PO ,Nellippara",
+        "city": "Idukki",
+        "landmark": "Nkj",
+        "state": "Kerala",
+        "address_type": "Home",
+        "is_default": true
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 1,
+    "fields": {
+        "phone": "7034513604",
+        "otp": "3940"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 2,
+    "fields": {
+        "phone": "1234567890",
+        "otp": "5257"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 3,
+    "fields": {
+        "phone": "9074417467",
+        "otp": "2330"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 4,
+    "fields": {
+        "phone": "8943992977",
+        "otp": "2720"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 5,
+    "fields": {
+        "phone": "9447980634",
+        "otp": "0769"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 6,
+    "fields": {
+        "phone": "9544334756",
+        "otp": "9594"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 7,
+    "fields": {
+        "phone": "6380728371",
+        "otp": "9988"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 8,
+    "fields": {
+        "phone": "8111820995",
+        "otp": "8747"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 9,
+    "fields": {
+        "phone": "8589998009",
+        "otp": "1717"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 10,
+    "fields": {
+        "phone": "9846945506",
+        "otp": "2231"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 11,
+    "fields": {
+        "phone": "9656669358",
+        "otp": "1613"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 12,
+    "fields": {
+        "phone": "9746323264",
+        "otp": "2492"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 13,
+    "fields": {
+        "phone": "9544668210",
+        "otp": "9349"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 14,
+    "fields": {
+        "phone": "9495103466",
+        "otp": "5874"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 15,
+    "fields": {
+        "phone": "1122334455",
+        "otp": "8065"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 16,
+    "fields": {
+        "phone": "8136810709",
+        "otp": "7846"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 17,
+    "fields": {
+        "phone": "9846036835",
+        "otp": "7508"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 18,
+    "fields": {
+        "phone": "9539794989",
+        "otp": "2324"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 19,
+    "fields": {
+        "phone": "9747964072",
+        "otp": "3163"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 20,
+    "fields": {
+        "phone": "9447583282",
+        "otp": "0335"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 21,
+    "fields": {
+        "phone": "8137928082",
+        "otp": "6732"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 22,
+    "fields": {
+        "phone": "8593908025",
+        "otp": "5305"
+    }
+},
+{
+    "model": "customers.otp",
+    "pk": 23,
+    "fields": {
+        "phone": "7034537972",
+        "otp": "9875"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 1,
+    "fields": {
+        "name": "uamir",
+        "date": "2022-07-14",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+        "date_added": "2022-07-06T12:26:24.486Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 2,
+    "fields": {
+        "name": "uhuhuhu",
+        "date": "2022-07-21",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+        "date_added": "2022-07-06T12:29:30.945Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 3,
+    "fields": {
+        "name": "sajad",
+        "date": "2022-07-15",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+        "date_added": "2022-07-08T05:59:55.451Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 4,
+    "fields": {
+        "name": "sajad",
+        "date": "2022-07-15",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+        "date_added": "2022-07-08T06:18:27.398Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 5,
+    "fields": {
+        "name": "sajad",
+        "date": "2022-07-14",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+        "date_added": "2022-07-08T06:21:15.630Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 6,
+    "fields": {
+        "name": "naseef",
+        "date": "2022-07-21",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+        "date_added": "2022-07-13T04:46:23.908Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 7,
+    "fields": {
+        "name": "otngit",
+        "date": "2022-07-14",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+        "date_added": "2022-07-13T04:53:34.810Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 8,
+    "fields": {
+        "name": "otngit",
+        "date": "2022-07-14",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+        "date_added": "2022-07-13T04:53:56.625Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 9,
+    "fields": {
+        "name": "otngit",
+        "date": "2022-07-14",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+        "date_added": "2022-07-13T04:56:03.270Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 10,
+    "fields": {
+        "name": "otngit",
+        "date": "2022-07-14",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+        "date_added": "2022-07-13T04:59:15.714Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 23,
+    "fields": {
+        "name": "me",
+        "date": "2022-08-28",
+        "customer": "1dfda781-4fd8-4780-a162-d86dc77bb88e",
+        "date_added": "2022-08-24T04:24:25.144Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 24,
+    "fields": {
+        "name": "me",
+        "date": "2022-08-28",
+        "customer": "1dfda781-4fd8-4780-a162-d86dc77bb88e",
+        "date_added": "2022-08-24T04:26:13.443Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 25,
+    "fields": {
+        "name": "Yyhu",
+        "date": "2022-08-31",
+        "customer": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc",
+        "date_added": "2022-08-24T08:07:33.733Z"
+    }
+},
+{
+    "model": "customers.moments",
+    "pk": 26,
+    "fields": {
+        "name": "Shalu",
+        "date": "2022-08-19",
+        "customer": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc",
+        "date_added": "2022-08-24T08:14:00.848Z"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 1,
+    "fields": {
+        "date": "2022-07-07",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 2,
+    "fields": {
+        "date": "2022-07-07",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 3,
+    "fields": {
+        "date": "2022-07-09",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 4,
+    "fields": {
+        "date": "2022-07-16",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 5,
+    "fields": {
+        "date": "2022-07-15",
+        "customer": "5b5f8849-7ca7-431b-84c4-387a460d0e26"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 6,
+    "fields": {
+        "date": "2022-07-20",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 7,
+    "fields": {
+        "date": "2022-07-21",
+        "customer": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 13,
+    "fields": {
+        "date": "2022-08-27",
+        "customer": "1dfda781-4fd8-4780-a162-d86dc77bb88e"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 14,
+    "fields": {
+        "date": "2022-08-31",
+        "customer": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc"
+    }
+},
+{
+    "model": "customers.deliverydatetemp",
+    "pk": 15,
+    "fields": {
+        "date": "2022-09-16",
+        "customer": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc"
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": "08b8f49f-f64d-4afe-ba6d-f68637fcee1d",
+    "fields": {
+        "date_added": "2022-08-24T04:33:21.031Z",
+        "is_deleted": false,
+        "product_variant": "8edb8fa2-3d30-465d-8a30-280263fefca7",
+        "qty": "1",
+        "price": "1600.00",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf"
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": "4e8fe219-7c70-44e0-a489-d1422b339e5c",
+    "fields": {
+        "date_added": "2022-08-17T08:17:24.205Z",
+        "is_deleted": false,
+        "product_variant": "8edb8fa2-3d30-465d-8a30-280263fefca7",
+        "qty": null,
+        "price": "1600.00",
+        "order": "8017ce0b-c044-43c3-93e2-862de6c437c2"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 2,
+    "fields": {
+        "status": "10",
+        "order": "a1e09c7f-55c0-4bcb-beec-b57d0edeba27",
+        "date": "2022-07-26T11:00:13.177Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 5,
+    "fields": {
+        "status": "10",
+        "order": "8017ce0b-c044-43c3-93e2-862de6c437c2",
+        "date": "2022-08-17T08:17:24.207Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 6,
+    "fields": {
+        "status": "20",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+        "date": "2022-08-24T04:34:46.954Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 7,
+    "fields": {
+        "status": "30",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+        "date": "2022-08-24T04:34:56.201Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 8,
+    "fields": {
+        "status": "40",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+        "date": "2022-08-24T04:35:00.550Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 9,
+    "fields": {
+        "status": "50",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+        "date": "2022-08-24T04:35:08.823Z"
+    }
+},
+{
+    "model": "orders.orderstatus",
+    "pk": 10,
+    "fields": {
+        "status": "50",
+        "order": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+        "date": "2022-08-24T04:35:48.788Z"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "administrator",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "staff",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "customer",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+        "name": "vendor",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 5,
+    "fields": {
+        "name": "distributor",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 6,
+    "fields": {
+        "name": "customer_user",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$vgakn2mJoFF0$+JX7xr5lxj5GLOxKqAAOaoob5ScQXlgUklG3SZyR8Xg=",
+        "last_login": "2022-08-24T04:34:31.392Z",
+        "is_superuser": true,
+        "username": "dett-admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-18T10:00:13.199Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$AlWzJ060M4tj$rfjCDmZeBmJ6vH0n7fSVGbdGaCa5wzBtRNNQ3CVk7Ok=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "7034513604",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-06T05:03:14.708Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$vuljfLalKdlD$ySuSGp/txkQ0+gisdv6JXbLB3mbKj4I161wNj7ahL40=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "1234567890",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-12T05:28:06.644Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$Gc1V7BX265Be$RfZgdwE7tB/lz+UmkYdyt8H1rqUkWccHIcPKmHMpG1M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "8589998009",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-18T13:10:29.325Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$YUCOiStnpTWl$Yz2TIElIPmD6qYXcMQCxScyTQgzZEoD6o4bbj2UCtbA=",
+        "last_login": "2022-07-19T10:59:09.881Z",
+        "is_superuser": false,
+        "username": "9846945506",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-19T10:58:29.388Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 208,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$rdaW6vncDBgE$SDMGFGxKAkXX2hcvzsTKfFAh6HyFm9D08J8H355BPno=",
+        "last_login": "2022-07-22T06:48:49.416Z",
+        "is_superuser": false,
+        "username": "9495103466",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-22T06:48:49.152Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 209,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$S4jBGFBnmHOj$CnttPXHoM4MaSxG1d4YE/5FFe21U25nZ90HdoKg122w=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "1122334455",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-22T07:02:13.459Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 279,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$gtJJhMQqUJli$aVTqxxbxSZPtlkxX443Fq8vPImuDy2IobhixrZ/wLaM=",
+        "last_login": "2022-07-26T09:41:09.855Z",
+        "is_superuser": false,
+        "username": "8136810709",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-26T09:41:09.578Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 308,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$eQcMEACK709f$rnkXOC55t74XQdNrihLmeJvInI/IubD1ad9el++Y5XY=",
+        "last_login": "2022-07-26T10:59:00.916Z",
+        "is_superuser": false,
+        "username": "9746323264",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-26T10:59:00.492Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 309,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$2EEI6X8eGhDT$211YrP25cy9jTRHzCbL5bTGfNL2fK5XDR6kZHB7q4Tk=",
+        "last_login": "2022-07-27T06:51:47.471Z",
+        "is_superuser": false,
+        "username": "9539794989",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-27T06:51:47.161Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 312,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$67LuDoW0P6nk$6+kYvDLi0Z/FbUBrrKNhCKhUhwlsy480vYm9PG6T3hk=",
+        "last_login": "2022-07-27T12:27:03.712Z",
+        "is_superuser": false,
+        "username": "8111820995",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-27T12:27:03.395Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 313,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$O7Fjglm0IxUD$S6uZPfqix6SQNtwb/HsGlAKUl8xLeIi05pxLbu6Ls5U=",
+        "last_login": "2022-07-27T13:14:18.730Z",
+        "is_superuser": false,
+        "username": "9447583282",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-27T13:14:18.457Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 316,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$ug0OQsFRMOZd$nbG9HQUL789Wfq0JXqWvzgP1+Kc5YmfD6ox1eDz+Ju8=",
+        "last_login": "2022-07-31T07:49:20.251Z",
+        "is_superuser": false,
+        "username": "9447980634",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-31T07:49:19.945Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 317,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$9titZc4PWujW$oglW4hi8Rn2RffteVWgy28lgQdsLI+HVXGOCWoUN2gQ=",
+        "last_login": "2022-08-14T18:53:33.263Z",
+        "is_superuser": false,
+        "username": "8137928082",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-14T18:53:32.726Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 318,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$JqmE0GnRpsOa$r9Wu5IVmrts+/PY5ETZG00Wk8ydT/MqZwaiKj8E2ZEY=",
+        "last_login": "2022-08-15T06:02:39.398Z",
+        "is_superuser": false,
+        "username": "8593908025",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-15T06:02:39.096Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 319,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$s6DvADAneo6w$rczl61OwNd0OXFXn6Bx+8bJqcarjYSn0xuzmrPub9zs=",
+        "last_login": "2022-08-17T08:16:12.244Z",
+        "is_superuser": false,
+        "username": "9544668210",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-17T08:16:11.953Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 320,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$z5Ck8saVUBz7$X0Ogfoz226pQXs4moiLhLIOfCIqpSECrkJVw6wvESrM=",
+        "last_login": "2022-08-21T20:28:24.867Z",
+        "is_superuser": false,
+        "username": "9747964072",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-21T20:28:24.573Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 321,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$22SlbqtxlhPE$WvUpM1Nzuq/WFdgKHnyumvE2/vpr1yKVYF2C0g4GuR4=",
+        "last_login": "2022-08-22T12:34:29.360Z",
+        "is_superuser": false,
+        "username": "7034537972",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-22T12:34:29.087Z",
+        "groups": [
+            6
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "0d4e24a1-1db4-4343-b3e2-24599e228630",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T07:06:12.955Z",
+        "date_updated": "2022-05-20T07:06:12.955Z",
+        "is_deleted": true,
+        "category_name": "Power Bank",
+        "description": "Conekt power bank Zeal Proton 10000 mAh",
+        "category_image": "products/category/images/IMG-20220427-WA0040.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "25a562c1-06d2-4f6c-8048-29ce6c97d8d4",
+    "fields": {
+        "auto_id": 12,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:11:53.219Z",
+        "date_updated": "2022-07-02T07:11:53.219Z",
+        "is_deleted": false,
+        "category_name": "Headset",
+        "description": "Stereo headphones that connect to a user's cellphone, music player, computer or stereo",
+        "category_image": "products/category/images/WhatsApp_Image_2022-07-02_at_10.13.43_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "2c6fbe99-0e7c-4d27-9cbe-52b636538079",
+    "fields": {
+        "auto_id": 16,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:30:50.560Z",
+        "date_updated": "2022-08-17T08:26:38.113Z",
+        "is_deleted": false,
+        "category_name": "Perfume",
+        "description": "Perfumes can be defined as substances that emit and diffuse a pleasant and fragrant odor.",
+        "category_image": "products/category/images/WhatsApp_Image_2022-08-17_at_10.58.34_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "2c7ec2c5-cd85-40f9-bf66-88a71547373e",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-24T07:57:33.021Z",
+        "date_updated": "2022-05-24T07:57:33.021Z",
+        "is_deleted": true,
+        "category_name": "Neckband",
+        "description": "RX S100 wireless headphone. V5.0 wireless neckband",
+        "category_image": "products/category/images/SAVE_20220524_132415.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "457b295f-79c0-410f-9424-30aa343bd458",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-31T06:32:59.195Z",
+        "date_updated": "2022-05-31T06:32:59.195Z",
+        "is_deleted": true,
+        "category_name": "Headset",
+        "description": "RX S100 wireless headphone. V5.0 wireless neckband",
+        "category_image": "products/category/images/SAVE_20220531_115834.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "4a9f2c6e-81d5-49f8-8a96-939aa66f0744",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:17:55.504Z",
+        "date_updated": "2022-05-23T07:17:55.504Z",
+        "is_deleted": true,
+        "category_name": "Earbuds",
+        "description": "Skullcandy mini and mighty true wireless earbuds",
+        "category_image": "products/category/images/SAVE_20220523_124239.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "661793d3-ae3b-4e4e-b1cf-eb7616c9d211",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:37:06.022Z",
+        "date_updated": "2022-05-20T06:37:06.023Z",
+        "is_deleted": true,
+        "category_name": "Headset",
+        "description": "Jbl live 100 bt Bluetooth headset",
+        "category_image": "products/category/images/IMG-20220427-WA0038.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "7586e86d-004d-4de7-bcd3-49f13439f945",
+    "fields": {
+        "auto_id": 15,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:19:51.608Z",
+        "date_updated": "2022-07-28T11:19:51.608Z",
+        "is_deleted": false,
+        "category_name": "Earpods",
+        "description": "AirPods are wireless Bluetooth earbuds designed by Apple Inc",
+        "category_image": "products/category/images/WhatsApp_Image_2022-07-28_at_2.47.39_PM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "772e4f8c-509c-4088-8bcf-58006630796b",
+    "fields": {
+        "auto_id": 18,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:42:02.030Z",
+        "date_updated": "2022-08-17T05:42:02.030Z",
+        "is_deleted": false,
+        "category_name": "Headphone",
+        "description": "The sound that these headphones output is of top-notch quality in terms of accuracy and enjoyability",
+        "category_image": "products/category/images/WhatsApp_Image_2022-08-17_at_10.58.25_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "83f779a4-5737-4c4f-82e0-4f225fbc7c64",
+    "fields": {
+        "auto_id": 19,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:08:38.061Z",
+        "date_updated": "2022-08-17T08:08:38.061Z",
+        "is_deleted": false,
+        "category_name": "Speaker",
+        "description": "A speaker is a term used to describe the user who is giving vocal commands to a software program",
+        "category_image": "products/category/images/WhatsApp_Image_2022-08-17_at_12.08.22_PM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "aa1c24fc-4a60-4b93-bba8-118d0f4824c6",
+    "fields": {
+        "auto_id": 14,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:37:44.134Z",
+        "date_updated": "2022-07-02T07:37:44.134Z",
+        "is_deleted": false,
+        "category_name": "Chocolate",
+        "description": "food product made from cocoa beans, consumed as candy and used to make beverages and to flavour or coat various confections and bakery products",
+        "category_image": "products/category/images/WhatsApp_Image_2022-07-02_at_11.18.05_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "acd16b1f-dba0-4ab4-b554-9f57301770b9",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-03T05:24:57.971Z",
+        "date_updated": "2022-06-03T05:24:57.971Z",
+        "is_deleted": true,
+        "category_name": "Stereo Earbuds",
+        "description": "TWS 18 true wireless stereo earbud. Ultra low power consumption. Noise cancellation",
+        "category_image": "products/category/images/SAVE_20220603_105205.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "bae34ef6-3a43-4b7e-b718-bedfb4a68a3c",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:14:58.174Z",
+        "date_updated": "2022-07-02T06:14:58.174Z",
+        "is_deleted": false,
+        "category_name": "Gift Hamper",
+        "description": "a hamper is a wide-mouthed container of basketwork that may often be carried on the back during the harvesting of fruit or vegetables by hand by workers in the field",
+        "category_image": "products/category/images/WhatsApp_Image_2022-06-30_at_10.57.42_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "c3a5f841-8d61-447a-94b7-054eff00b5bc",
+    "fields": {
+        "auto_id": 17,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:31:16.320Z",
+        "date_updated": "2022-08-17T05:31:16.320Z",
+        "is_deleted": false,
+        "category_name": "Perfume",
+        "description": "Perfumes can be defined as substances that emit and diffuse a pleasant and fragrant odor.",
+        "category_image": "products/category/images/WhatsApp_Image_2022-08-17_at_10.58.35_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "d2e78f8e-96b6-482b-9f65-8a187c0be095",
+    "fields": {
+        "auto_id": 13,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:28:05.918Z",
+        "date_updated": "2022-07-02T07:28:05.918Z",
+        "is_deleted": false,
+        "category_name": "Earbuds",
+        "description": "Is an American company based in Park City, Utah, that markets headphones, earphones, hands-free devices, audio backpacks, MP3 players, and other products.",
+        "category_image": "products/category/images/WhatsApp_Image_2022-07-02_at_10.52.27_AM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "d3cec4d7-abcd-4ca0-805a-74af609b6e58",
+    "fields": {
+        "auto_id": 11,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:41:16.811Z",
+        "date_updated": "2022-07-02T06:41:16.811Z",
+        "is_deleted": false,
+        "category_name": "Shoes",
+        "description": "A shoe is an item of footwear intended to protect and comfort the human foot",
+        "category_image": "products/category/images/WhatsApp_Image_2022-07-01_at_12.36.31_PM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "dcc45057-de36-4d32-a6c5-cb5e016de4c2",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:40:46.051Z",
+        "date_updated": "2022-06-24T05:57:28.569Z",
+        "is_deleted": false,
+        "category_name": "speaker",
+        "description": "REMAX RB-M48 SERIES BOTTLE SPEAKER.",
+        "category_image": "products/category/images/WhatsApp_Image_2022-06-23_at_7.11.43_PM.jpeg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "e0a34685-b2d0-43f9-bf8b-96cb9e10f127",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:01:50.077Z",
+        "date_updated": "2022-05-23T07:01:50.077Z",
+        "is_deleted": true,
+        "category_name": "Speaker",
+        "description": "Hapi pola grenade wireless speaker",
+        "category_image": "products/category/images/SAVE_20220523_122722.jpg"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": "fb6208a0-e976-4625-8245-25a49d57bde4",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:49:23.217Z",
+        "date_updated": "2022-05-20T06:49:23.217Z",
+        "is_deleted": true,
+        "category_name": "Power Bank",
+        "description": "MOBILE ACCESSORY 77040003 G/AD PT100 10000MAH 5V 8KGR C-(APT100-10000M-5V-CBKGR)(POWER BANK)",
+        "category_image": "products/category/images/IMG-20220427-WA0039.jpg"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "13da6fa1-3ebe-4333-91eb-9921863b5e87",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T07:02:50.931Z",
+        "date_updated": "2022-05-20T07:03:03.364Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "8507",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "1ca7255a-6b59-4c5d-b963-7b1bbbfbc895",
+    "fields": {
+        "auto_id": 23,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:29:42.997Z",
+        "date_updated": "2022-08-17T05:29:42.997Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "33029011",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "27035ee6-055d-4ca9-807d-bb254cbdf882",
+    "fields": {
+        "auto_id": 25,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:49:19.581Z",
+        "date_updated": "2022-08-17T05:49:19.581Z",
+        "is_deleted": false,
+        "type": "asc",
+        "code": "85183000\t",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "39968323-4f3a-446d-b1ab-fd25e08121f7",
+    "fields": {
+        "auto_id": 17,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:10:23.428Z",
+        "date_updated": "2022-07-02T07:10:23.428Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "3a225fcc-050b-4378-9704-b4a958bb24d2",
+    "fields": {
+        "auto_id": 18,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:20:53.962Z",
+        "date_updated": "2022-07-02T07:20:53.962Z",
+        "is_deleted": true,
+        "type": "asc",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "3adb59ae-5b01-422e-9073-0087f7ccd7af",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-31T06:30:54.531Z",
+        "date_updated": "2022-05-31T06:30:54.531Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "851830",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "44d4584b-e11d-4f03-bc99-6d755e7a9f28",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-31T07:11:23.070Z",
+        "date_updated": "2022-05-31T07:11:23.070Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "4b62826d-2067-4478-961e-ffb38c925ab7",
+    "fields": {
+        "auto_id": 15,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:40:16.506Z",
+        "date_updated": "2022-07-02T06:40:16.506Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "6402",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "59cef659-02dc-4a39-b882-920eea1af602",
+    "fields": {
+        "auto_id": 24,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:40:46.109Z",
+        "date_updated": "2022-08-17T05:40:46.109Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "5d3b2a11-5ab2-468c-88d6-f620228b3ce2",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-24T07:55:33.679Z",
+        "date_updated": "2022-05-24T07:55:33.679Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "8518",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "61fdda61-4c01-4cd7-b898-b0790558c778",
+    "fields": {
+        "auto_id": 14,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:13:25.705Z",
+        "date_updated": "2022-07-02T06:13:25.705Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "48239013",
+        "igst_rate": "5.00",
+        "sgst_rate": "2.50",
+        "cgst_rate": "2.50"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "70172fa5-fd7f-4474-a7be-93860bda09fe",
+    "fields": {
+        "auto_id": 20,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:35:41.333Z",
+        "date_updated": "2022-07-02T07:35:41.333Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "1806",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "740e2e25-e833-4ffc-b08b-e93c2bc8543b",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:29:45.794Z",
+        "date_updated": "2022-05-23T07:29:45.794Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "10081637",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "78fded65-f04c-4472-a46d-5497631986c8",
+    "fields": {
+        "auto_id": 16,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:44:47.810Z",
+        "date_updated": "2022-07-02T06:44:47.810Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "6",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "85c738c6-49ff-4bff-b176-eb9134a5d818",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:00:29.805Z",
+        "date_updated": "2022-05-23T07:00:29.805Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "851821",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "88227430-0dd2-495c-afd0-60098c57edfd",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:15:53.209Z",
+        "date_updated": "2022-05-23T07:15:53.209Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "897ed43e-f508-4cd2-a458-e7988ef37b7c",
+    "fields": {
+        "auto_id": 22,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:28:00.268Z",
+        "date_updated": "2022-07-28T11:28:00.268Z",
+        "is_deleted": false,
+        "type": "asc",
+        "code": "8518",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "8c2891bc-b125-40f7-b79b-9c84a0bcb400",
+    "fields": {
+        "auto_id": 13,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:43:45.148Z",
+        "date_updated": "2022-06-24T05:43:45.148Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85182900\t",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "9db9c78f-edfc-4530-8153-fac479e3f139",
+    "fields": {
+        "auto_id": 26,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:07:06.232Z",
+        "date_updated": "2022-08-17T08:07:06.232Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "851821",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "9fd5e81b-cb91-4025-bcf3-7412870a673b",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:36:40.310Z",
+        "date_updated": "2022-05-20T06:36:40.310Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "a8c7468b-e576-4127-b6f5-9ed7f707a514",
+    "fields": {
+        "auto_id": 11,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-02T06:09:24.105Z",
+        "date_updated": "2022-06-02T06:09:24.105Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "1509",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "b9577283-1fb7-462f-b3a6-74e1c128c607",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:48:29.041Z",
+        "date_updated": "2022-05-20T06:48:29.041Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85044010",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "c5608772-2038-407d-9766-cd445066e7ff",
+    "fields": {
+        "auto_id": 12,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:38:17.525Z",
+        "date_updated": "2022-06-24T05:38:17.525Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "85182900",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "c927f1af-fa31-485e-9563-07c8ec1b31b1",
+    "fields": {
+        "auto_id": 27,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:10:39.347Z",
+        "date_updated": "2022-08-17T08:10:39.347Z",
+        "is_deleted": false,
+        "type": "asc",
+        "code": "851821",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "d4c45010-ee28-4067-90c0-eb62610caa2c",
+    "fields": {
+        "auto_id": 21,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:17:31.406Z",
+        "date_updated": "2022-07-28T11:17:31.406Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "8518",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "e393f3ab-71af-469e-abdd-5dd7f9152dde",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:28:11.605Z",
+        "date_updated": "2022-05-23T07:28:11.605Z",
+        "is_deleted": true,
+        "type": "hsn",
+        "code": "85183000",
+        "igst_rate": "18.00",
+        "sgst_rate": "9.00",
+        "cgst_rate": "9.00"
+    }
+},
+{
+    "model": "products.gstcodes",
+    "pk": "e79e86cc-c27b-4df9-aae0-0f9b74584893",
+    "fields": {
+        "auto_id": 19,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:26:17.894Z",
+        "date_updated": "2022-07-02T07:26:17.894Z",
+        "is_deleted": false,
+        "type": "hsn",
+        "code": "85176290",
+        "igst_rate": "12.00",
+        "sgst_rate": "6.00",
+        "cgst_rate": "6.00"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "241a94b3-d45c-4362-9665-e35df1a132a5",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:44:47.813Z",
+        "date_updated": "2022-07-02T07:08:28.210Z",
+        "is_deleted": false,
+        "product_category": "d3cec4d7-abcd-4ca0-805a-74af609b6e58",
+        "name": "Shoe",
+        "feautured_image": "products/images/WhatsApp_Image_2022-07-01_at_12.36.31_PM.jpeg",
+        "product_description": "A shoe is an item of footwear intended to protect and comfort the human foot.",
+        "meta_description": "Shoes are also used as an item of decoration and fashion",
+        "gst_code": "78fded65-f04c-4472-a46d-5497631986c8"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "49877c3f-6506-4528-980e-52aa7352e6d1",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:43:45.151Z",
+        "date_updated": "2022-07-02T06:35:19.356Z",
+        "is_deleted": false,
+        "product_category": "dcc45057-de36-4d32-a6c5-cb5e016de4c2",
+        "name": "Blutooth Speaker",
+        "feautured_image": "products/images/bottle_speaker.jpg",
+        "product_description": "REMAX RB-M48 SERIES BOTTLE SPEAKER",
+        "meta_description": "An amplifier and loudspeaker with Bluetooth wireless connectivity that is paired (pre-associated) with one or more smartphones, tablets, iPods or computers.",
+        "gst_code": "8c2891bc-b125-40f7-b79b-9c84a0bcb400"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "4c4b17f0-e733-4a52-a8db-b411b31619ee",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:17:36.577Z",
+        "date_updated": "2022-07-02T06:27:05.924Z",
+        "is_deleted": false,
+        "product_category": "bae34ef6-3a43-4b7e-b718-bedfb4a68a3c",
+        "name": "Hamper",
+        "feautured_image": "products/images/WhatsApp_Image_2022-06-30_at_10.57.42_AM_1.jpeg",
+        "product_description": "a hamper is a wide-mouthed container of basketwork that may often be carried on the back during the harvesting of fruit or vegetables by hand by workers in the field",
+        "meta_description": "The contents of the hamper may be decanted regularly into larger containers or a cart, wagon, or truck",
+        "gst_code": "61fdda61-4c01-4cd7-b898-b0790558c778"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "4e2ba439-94b3-433a-83aa-9f5eb1074603",
+    "fields": {
+        "auto_id": 13,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:42:19.102Z",
+        "date_updated": "2022-07-02T07:42:19.102Z",
+        "is_deleted": false,
+        "product_category": "aa1c24fc-4a60-4b93-bba8-118d0f4824c6",
+        "name": "Chocolate",
+        "feautured_image": "products/images/WhatsApp_Image_2022-07-02_at_11.18.05_AM_1.jpeg",
+        "product_description": "Chocolate is a food product made from roasted and ground cacao seed kernels, that is available as a liquid, solid or paste, on its own or as a flavoring agent in other foods.",
+        "meta_description": "Decadent is a good word to describe chocolate desserts that feel silky on the tongue and taste luxurious or expensive",
+        "gst_code": "70172fa5-fd7f-4474-a7be-93860bda09fe"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "7d4f988b-70ea-496f-871f-3d15984048bd",
+    "fields": {
+        "auto_id": 15,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:35:02.679Z",
+        "date_updated": "2022-08-17T05:38:31.068Z",
+        "is_deleted": false,
+        "product_category": "2c6fbe99-0e7c-4d27-9cbe-52b636538079",
+        "name": "Perfume",
+        "feautured_image": "products/images/WhatsApp_Image_2022-08-17_at_10.58.35_AM.jpeg",
+        "product_description": "Perfumes can be defined as substances that emit and diffuse a pleasant and fragrant odor.",
+        "meta_description": "They consist of manmade mixtures of aromatic chemicals and essential oils.",
+        "gst_code": "1ca7255a-6b59-4c5d-b963-7b1bbbfbc895"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "8b90746d-6e6f-4d11-aa1a-59562bfcc177",
+    "fields": {
+        "auto_id": 12,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:31:48.700Z",
+        "date_updated": "2022-07-02T07:31:48.700Z",
+        "is_deleted": false,
+        "product_category": "d2e78f8e-96b6-482b-9f65-8a187c0be095",
+        "name": "Skullcandy Earbuds",
+        "feautured_image": "products/images/WhatsApp_Image_2022-07-02_at_10.52.27_AM.jpeg",
+        "product_description": "is an American company based in Park City, Utah, that markets headphones, earphones, hands-free devices, audio backpacks, MP3 players, and other products.",
+        "meta_description": "Skullcandy delivers a decent variety of fashion-forward headphones that come in many unique colors to match your taste, style, and preferences",
+        "gst_code": "e79e86cc-c27b-4df9-aae0-0f9b74584893"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "8e995d4c-38e7-4b55-8646-561d9f6b69d8",
+    "fields": {
+        "auto_id": 11,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:20:53.965Z",
+        "date_updated": "2022-07-02T07:20:53.965Z",
+        "is_deleted": false,
+        "product_category": "25a562c1-06d2-4f6c-8048-29ce6c97d8d4",
+        "name": "Stereo Headset",
+        "feautured_image": "products/images/WhatsApp_Image_2022-07-02_at_10.13.43_AM.jpeg",
+        "product_description": "Bluetooth headphones may also include a microphone and function as a headset for smartphones, but their primary purpose is music listening.",
+        "meta_description": "Stereo headphones that connect to a user's cellphone, music player, computer or stereo",
+        "gst_code": "3a225fcc-050b-4378-9704-b4a958bb24d2"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "941fb52e-1ce1-463d-8343-34726d87d7e6",
+    "fields": {
+        "auto_id": 17,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:10:39.350Z",
+        "date_updated": "2022-08-20T10:30:08.179Z",
+        "is_deleted": false,
+        "product_category": "83f779a4-5737-4c4f-82e0-4f225fbc7c64",
+        "name": "Base Speaker",
+        "feautured_image": "products/images/WhatsApp_Image_2022-08-20_at_3.59.23_PM.jpeg",
+        "product_description": "A speaker is a term used to describe the user who is giving vocal commands to a software program",
+        "meta_description": "A computer speaker is an output hardware device that connects to a computer to generate sound",
+        "gst_code": "c927f1af-fa31-485e-9563-07c8ec1b31b1"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "d94c9b31-b346-45e3-9bcc-60792e36286f",
+    "fields": {
+        "auto_id": 16,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:49:19.584Z",
+        "date_updated": "2022-08-17T07:44:08.452Z",
+        "is_deleted": false,
+        "product_category": "772e4f8c-509c-4088-8bcf-58006630796b",
+        "name": "Figers",
+        "feautured_image": "products/images/WhatsApp_Image_2022-08-17_at_10.58.24_AM.jpeg",
+        "product_description": "The sound that these headphones output is of top-notch quality in terms of accuracy and enjoyability",
+        "meta_description": "With a defined bass and a treble that does not overpower the mids, the FINGERS headphones give you a fully-balanced audio experience.",
+        "gst_code": "27035ee6-055d-4ca9-807d-bb254cbdf882"
+    }
+},
+{
+    "model": "products.product",
+    "pk": "e01d03f1-2097-492e-925f-4a50224e11b2",
+    "fields": {
+        "auto_id": 14,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:28:00.276Z",
+        "date_updated": "2022-07-28T11:34:44.102Z",
+        "is_deleted": false,
+        "product_category": "7586e86d-004d-4de7-bcd3-49f13439f945",
+        "name": "Boat Earpod",
+        "feautured_image": "products/images/WhatsApp_Image_2022-07-28_at_2.47.40_PM.jpeg",
+        "product_description": "Single tap the capacitive touch control on either earbud to play a song or to pause one. Single tap the capacitive touch control on either earbud to play a song or to pause one.",
+        "meta_description": "Boat Airdopes 121V2 Bluetooth Truly Wireless in Ear Earbuds with Mic with Upto 14 Hours Playback, Lightweight 8Mm Drivers, Led Indicators and Multifunction Controls",
+        "gst_code": "897ed43e-f508-4cd2-a458-e7988ef37b7c"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "0ac82a36-2d3c-416b-aef7-bf6de2821a34",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:22:51.640Z",
+        "date_updated": "2022-05-23T07:22:51.640Z",
+        "is_deleted": true,
+        "unit_of_measurement": "DB spl/mW"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "28e58ca4-9724-4318-800f-4f66bf6359ac",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:20:58.782Z",
+        "date_updated": "2022-07-02T06:20:58.782Z",
+        "is_deleted": false,
+        "unit_of_measurement": "large"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "85739bde-2b5f-4872-87bb-da62575997a7",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-27T07:56:31.505Z",
+        "date_updated": "2022-07-27T07:56:31.505Z",
+        "is_deleted": false,
+        "unit_of_measurement": "Qty"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "a132843f-5098-43da-8ac3-ee96d0756784",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:39:40.313Z",
+        "date_updated": "2022-05-20T06:39:40.313Z",
+        "is_deleted": true,
+        "unit_of_measurement": "Hz"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "b5fcad93-d8e8-4bd1-81af-b58c5441748f",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T07:10:16.867Z",
+        "date_updated": "2022-05-20T07:10:16.867Z",
+        "is_deleted": true,
+        "unit_of_measurement": "mAh"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "b68db2d5-a0eb-47fa-bb85-4e1686d71616",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:21:08.360Z",
+        "date_updated": "2022-07-02T06:21:08.360Z",
+        "is_deleted": false,
+        "unit_of_measurement": "medium"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "d87a1980-e5ff-4a40-8bb9-e376379b6f01",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:56:49.167Z",
+        "date_updated": "2022-05-20T06:56:49.167Z",
+        "is_deleted": true,
+        "unit_of_measurement": "558B"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:45:39.427Z",
+        "date_updated": "2022-06-27T09:35:33.707Z",
+        "is_deleted": false,
+        "unit_of_measurement": "small"
+    }
+},
+{
+    "model": "products.unitofmeasurement",
+    "pk": "f966dbab-37a3-4112-8f33-42e96fefa944",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:06:37.808Z",
+        "date_updated": "2022-05-23T07:06:37.808Z",
+        "is_deleted": true,
+        "unit_of_measurement": "W"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-27T09:36:01.022Z",
+        "date_updated": "2022-06-27T09:41:57.686Z",
+        "is_deleted": false,
+        "unit_of_measurement": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "1"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "0790ce50-322f-4af4-9107-8888e512a9fa",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:37:09.140Z",
+        "date_updated": "2022-07-02T06:37:09.140Z",
+        "is_deleted": false,
+        "unit_of_measurement": "28e58ca4-9724-4318-800f-4f66bf6359ac",
+        "unit": "3"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "2dd1c705-f016-4d1e-b451-97b5e4baf67c",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:21:24.502Z",
+        "date_updated": "2022-07-02T06:21:24.502Z",
+        "is_deleted": false,
+        "unit_of_measurement": "b68db2d5-a0eb-47fa-bb85-4e1686d71616",
+        "unit": "2"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "4d89ca78-0373-43b2-80d7-d2659eca2ffb",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-27T07:57:20.969Z",
+        "date_updated": "2022-07-27T07:57:20.969Z",
+        "is_deleted": false,
+        "unit_of_measurement": "85739bde-2b5f-4872-87bb-da62575997a7",
+        "unit": "1"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "510fd0cc-8127-47ae-9d32-c9a543565a73",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:06:48.502Z",
+        "date_updated": "2022-05-23T07:06:48.502Z",
+        "is_deleted": true,
+        "unit_of_measurement": "f966dbab-37a3-4112-8f33-42e96fefa944",
+        "unit": "10"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "762a1ce3-cda4-4bad-8ab4-f875ad9eb999",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:57:05.531Z",
+        "date_updated": "2022-05-20T06:57:05.531Z",
+        "is_deleted": true,
+        "unit_of_measurement": "d87a1980-e5ff-4a40-8bb9-e376379b6f01",
+        "unit": "MAh"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "887354cf-8e6f-43fd-9055-e47852edea02",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T07:10:29.679Z",
+        "date_updated": "2022-05-20T07:10:29.679Z",
+        "is_deleted": true,
+        "unit_of_measurement": "b5fcad93-d8e8-4bd1-81af-b58c5441748f",
+        "unit": "100000"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "b4f236f4-4367-4cfd-a472-1e1429fba5ef",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-20T06:39:56.985Z",
+        "date_updated": "2022-05-20T06:39:56.985Z",
+        "is_deleted": true,
+        "unit_of_measurement": "a132843f-5098-43da-8ac3-ee96d0756784",
+        "unit": "2"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "b752f8b9-e833-4cac-bfb1-90726ce9a4c9",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:45:54.241Z",
+        "date_updated": "2022-06-24T05:45:54.241Z",
+        "is_deleted": true,
+        "unit_of_measurement": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "Hz"
+    }
+},
+{
+    "model": "products.unit",
+    "pk": "ede02956-03cc-4572-bfd1-9e5945b358c3",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-05-23T07:23:22.444Z",
+        "date_updated": "2022-05-23T07:23:22.444Z",
+        "is_deleted": true,
+        "unit_of_measurement": "0ac82a36-2d3c-416b-aef7-bf6de2821a34",
+        "unit": "125"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "14eeaafe-f6df-4877-9009-cd970eda5c6d",
+    "fields": {
+        "auto_id": 11,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:05:51.740Z",
+        "date_updated": "2022-07-02T07:06:47.395Z",
+        "is_deleted": false,
+        "product": "241a94b3-d45c-4362-9665-e35df1a132a5",
+        "title": "shoe",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2500.00",
+        "price": "2200.00",
+        "opening_stock": "0.00",
+        "stock": "0.00",
+        "gender": "10",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": true,
+        "color": "7085730b-49df-40ab-b1eb-a90deac235c5",
+        "brand": "e2e34ac8-15ff-4bd5-9faf-6eb3ab723998"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "244b1586-4291-4f88-a7a0-31417025ee8f",
+    "fields": {
+        "auto_id": 13,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:32:59.364Z",
+        "date_updated": "2022-07-02T07:32:59.364Z",
+        "is_deleted": false,
+        "product": "8b90746d-6e6f-4d11-aa1a-59562bfcc177",
+        "title": "Earbuds",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "3500.00",
+        "price": "2800.00",
+        "opening_stock": "0.00",
+        "stock": "0.00",
+        "gender": "10",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": true,
+        "color": "89d2c951-c0d7-42db-bbdc-b798489989f1",
+        "brand": "5c34facb-faaf-41ed-9635-08b72a6a1873"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "2da60f33-642c-45a0-b207-f9744fdb1bee",
+    "fields": {
+        "auto_id": 16,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:36:06.925Z",
+        "date_updated": "2022-08-17T05:36:06.925Z",
+        "is_deleted": false,
+        "product": "7d4f988b-70ea-496f-871f-3d15984048bd",
+        "title": "perfume",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "4d89ca78-0373-43b2-80d7-d2659eca2ffb",
+        "mrp": "2350.00",
+        "price": "2000.00",
+        "opening_stock": "10.00",
+        "stock": "10.00",
+        "gender": "20",
+        "age_group": "40",
+        "person_type": null,
+        "is_default": true,
+        "color": "ff2da6a0-c8c7-4ba6-b71a-d4a18ae5e9ed",
+        "brand": "a43c03b1-aecd-494f-ac6d-849a04fb4e4a"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "50f07af7-8ad6-4d6a-8741-c0fa93d20d47",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:47:32.148Z",
+        "date_updated": "2022-06-27T09:36:54.584Z",
+        "is_deleted": false,
+        "product": "49877c3f-6506-4528-980e-52aa7352e6d1",
+        "title": "Blutooth Speaker",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2800.00",
+        "price": "2400.00",
+        "opening_stock": "10.00",
+        "stock": "10.00",
+        "gender": "10",
+        "age_group": "40",
+        "person_type": null,
+        "is_default": true,
+        "color": "a22213bd-53d1-47c9-b06d-60dade80caee",
+        "brand": "432a6986-19b0-4054-b89e-6c77c7948a03"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "57bf5e72-37b4-42b3-bf8b-0e0665782c26",
+    "fields": {
+        "auto_id": 14,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:43:07.059Z",
+        "date_updated": "2022-07-27T12:07:09.701Z",
+        "is_deleted": false,
+        "product": "4e2ba439-94b3-433a-83aa-9f5eb1074603",
+        "title": "500 gm",
+        "uom": "28e58ca4-9724-4318-800f-4f66bf6359ac",
+        "unit": "0790ce50-322f-4af4-9107-8888e512a9fa",
+        "mrp": "2200.00",
+        "price": "1990.00",
+        "opening_stock": "0.00",
+        "stock": "0.00",
+        "gender": "20",
+        "age_group": "all",
+        "person_type": null,
+        "is_default": true,
+        "color": "e241c4b5-3f17-436b-9af2-f1ad3b1f2535",
+        "brand": "0466d0fb-7ba4-44b0-adf2-4c4368a72b59"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "5a74367c-36bd-452d-a1bd-b1ea10808646",
+    "fields": {
+        "auto_id": 15,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:28:56.387Z",
+        "date_updated": "2022-07-28T11:35:44.836Z",
+        "is_deleted": false,
+        "product": "e01d03f1-2097-492e-925f-4a50224e11b2",
+        "title": "Boat earpod",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2999.00",
+        "price": "2350.00",
+        "opening_stock": "4.00",
+        "stock": "4.00",
+        "gender": "10",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": true,
+        "color": "7e8d380c-2d79-42a9-946b-ea3040f7728e",
+        "brand": "35cfe926-ccbc-4534-b160-aa9ce4a61870"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "7ad9a321-7377-4279-8f7b-039cb1622c85",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:35:05.241Z",
+        "date_updated": "2022-07-02T06:35:05.241Z",
+        "is_deleted": false,
+        "product": "49877c3f-6506-4528-980e-52aa7352e6d1",
+        "title": "speaker",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2800.00",
+        "price": "2400.00",
+        "opening_stock": "0.00",
+        "stock": "0.00",
+        "gender": "10",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": false,
+        "color": "a22213bd-53d1-47c9-b06d-60dade80caee",
+        "brand": "432a6986-19b0-4054-b89e-6c77c7948a03"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "8edb8fa2-3d30-465d-8a30-280263fefca7",
+    "fields": {
+        "auto_id": 18,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:13:41.627Z",
+        "date_updated": "2022-08-17T08:13:41.627Z",
+        "is_deleted": false,
+        "product": "941fb52e-1ce1-463d-8343-34726d87d7e6",
+        "title": "Speaker",
+        "uom": "b68db2d5-a0eb-47fa-bb85-4e1686d71616",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2400.00",
+        "price": "1600.00",
+        "opening_stock": "10.00",
+        "stock": "8.00",
+        "gender": "10",
+        "age_group": "all",
+        "person_type": null,
+        "is_default": true,
+        "color": "050634e6-bc18-4f97-8dd9-e279a52cb15e",
+        "brand": "16926303-8d70-4823-93fa-7349f20a2b9b"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "b9b8b6b8-a3eb-4a99-86c8-16a1956894b9",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:23:43.426Z",
+        "date_updated": "2022-07-02T06:23:43.426Z",
+        "is_deleted": false,
+        "product": "4c4b17f0-e733-4a52-a8db-b411b31619ee",
+        "title": "hamper",
+        "uom": "b68db2d5-a0eb-47fa-bb85-4e1686d71616",
+        "unit": "2dd1c705-f016-4d1e-b451-97b5e4baf67c",
+        "mrp": "2500.00",
+        "price": "2000.00",
+        "opening_stock": "0.00",
+        "stock": "-1.00",
+        "gender": "20",
+        "age_group": "40",
+        "person_type": null,
+        "is_default": true,
+        "color": "da498524-1df0-479f-ba51-ea10ce6414b3",
+        "brand": "eaade770-de91-4918-a2e7-09f7e6b7317e"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "bab34db4-e452-40a6-bdb6-c1c9aeb4f69b",
+    "fields": {
+        "auto_id": 17,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:52:41.629Z",
+        "date_updated": "2022-08-17T07:44:30.604Z",
+        "is_deleted": false,
+        "product": "d94c9b31-b346-45e3-9bcc-60792e36286f",
+        "title": "figers",
+        "uom": "28e58ca4-9724-4318-800f-4f66bf6359ac",
+        "unit": "2dd1c705-f016-4d1e-b451-97b5e4baf67c",
+        "mrp": "2200.00",
+        "price": "1995.00",
+        "opening_stock": "0.00",
+        "stock": "0.00",
+        "gender": "10",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": true,
+        "color": "8e7fc421-b4a2-467f-a071-0ca609f5e517",
+        "brand": "a62a27ed-57e3-45e2-86e2-bb95246a5c04"
+    }
+},
+{
+    "model": "products.productvariant",
+    "pk": "f575eee5-c9d4-48d3-bae0-4d6a76658a2e",
+    "fields": {
+        "auto_id": 12,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:21:47.654Z",
+        "date_updated": "2022-07-02T07:21:47.654Z",
+        "is_deleted": false,
+        "product": "8e995d4c-38e7-4b55-8646-561d9f6b69d8",
+        "title": "headset",
+        "uom": "da7a078c-b81c-4639-9d6d-2c40a70ad7af",
+        "unit": "03489b86-428a-40d0-bae8-d19b4a0f7538",
+        "mrp": "2800.00",
+        "price": "2600.00",
+        "opening_stock": "3.00",
+        "stock": "3.00",
+        "gender": "20",
+        "age_group": "30",
+        "person_type": null,
+        "is_default": true,
+        "color": "89d2c951-c0d7-42db-bbdc-b798489989f1",
+        "brand": "4e56b332-a9a3-4de2-b834-deb855bcd5e3"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "03e436fc-a3a8-4e6b-9c5b-bddff8c505fd",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:07:19.061Z",
+        "date_updated": "2022-07-02T07:07:19.061Z",
+        "is_deleted": false,
+        "product_variant": "14eeaafe-f6df-4877-9009-cd970eda5c6d",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-07-01_at_12.36.31_PM_1.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "1422189d-9d6d-4550-95f8-fce7ad3ec57c",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:22:33.784Z",
+        "date_updated": "2022-07-02T07:22:33.784Z",
+        "is_deleted": false,
+        "product_variant": "f575eee5-c9d4-48d3-bae0-4d6a76658a2e",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-07-02_at_10.13.43_AM_1.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "34de0dfe-b779-4d15-b18b-8b3a1b40a113",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:43:42.253Z",
+        "date_updated": "2022-07-02T07:43:42.253Z",
+        "is_deleted": false,
+        "product_variant": "57bf5e72-37b4-42b3-bf8b-0e0665782c26",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-07-02_at_11.18.05_AM_2.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "36fc05bd-b1d4-4af2-8651-970e957eb729",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:34:12.922Z",
+        "date_updated": "2022-07-02T07:34:12.922Z",
+        "is_deleted": false,
+        "product_variant": "244b1586-4291-4f88-a7a0-31417025ee8f",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-07-02_at_10.52.27_AM_1.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "3b173d3c-28c4-4109-ba50-5a9a5328c708",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:37:27.936Z",
+        "date_updated": "2022-08-17T05:37:27.936Z",
+        "is_deleted": false,
+        "product_variant": "2da60f33-642c-45a0-b207-f9744fdb1bee",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-08-17_at_10.58.34_AM.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "3c95417f-381c-44a1-bd4f-fddd76c0228f",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:53:35.735Z",
+        "date_updated": "2022-08-17T05:53:35.735Z",
+        "is_deleted": false,
+        "product_variant": "bab34db4-e452-40a6-bdb6-c1c9aeb4f69b",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-08-17_at_10.58.25_AM.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "3f0cb8cc-4754-4284-a8ee-10f56dc2c553",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:31:41.656Z",
+        "date_updated": "2022-07-28T11:31:41.656Z",
+        "is_deleted": false,
+        "product_variant": "5a74367c-36bd-452d-a1bd-b1ea10808646",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-07-28_at_2.47.39_PM.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "71e469e8-ed2f-4a2c-8407-e6eee0f3ae10",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:32:08.506Z",
+        "date_updated": "2022-07-02T06:32:08.506Z",
+        "is_deleted": false,
+        "product_variant": "b9b8b6b8-a3eb-4a99-86c8-16a1956894b9",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-06-30_at_10.57.42_AM_1.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "ba6f3e36-4f35-433f-bc6a-eba3677f2fea",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:36:12.745Z",
+        "date_updated": "2022-07-02T06:36:12.745Z",
+        "is_deleted": false,
+        "product_variant": "50f07af7-8ad6-4d6a-8741-c0fa93d20d47",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-06-23_at_7.11.43_PM.jpeg"
+    }
+},
+{
+    "model": "products.productimage",
+    "pk": "da50668d-ab7b-4245-9b27-cf8dfce7d2d1",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:14:07.896Z",
+        "date_updated": "2022-08-17T08:14:07.896Z",
+        "is_deleted": false,
+        "product_variant": "8edb8fa2-3d30-465d-8a30-280263fefca7",
+        "feautured_image": "products/products/images/WhatsApp_Image_2022-08-17_at_12.08.22_PM_1.jpeg"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "11f422b0-ffce-44cd-860d-46a1b8fe86b2",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:23:05.051Z",
+        "date_updated": "2022-07-02T07:23:05.051Z",
+        "is_deleted": false,
+        "product_variant": "f575eee5-c9d4-48d3-bae0-4d6a76658a2e",
+        "occassion": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+        "sub_occassion": "c422a1ee-a4bb-499f-9aac-1d047b1a28f6",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "1cabb20d-c40d-44ad-9748-b4f311856985",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T07:33:24.102Z",
+        "date_updated": "2022-07-02T07:33:24.103Z",
+        "is_deleted": false,
+        "product_variant": "244b1586-4291-4f88-a7a0-31417025ee8f",
+        "occassion": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+        "sub_occassion": "c422a1ee-a4bb-499f-9aac-1d047b1a28f6",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "4bb7c671-61b2-49a7-8dbe-99d57c066986",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:36:53.814Z",
+        "date_updated": "2022-08-17T05:36:53.815Z",
+        "is_deleted": false,
+        "product_variant": "2da60f33-642c-45a0-b207-f9744fdb1bee",
+        "occassion": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+        "sub_occassion": "1cc5915c-a54a-4a2d-8352-c9aca50efae2",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "5c1b198d-ee77-4d81-aa40-382910cc11e1",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:51:35.775Z",
+        "date_updated": "2022-06-24T05:51:35.775Z",
+        "is_deleted": false,
+        "product_variant": "50f07af7-8ad6-4d6a-8741-c0fa93d20d47",
+        "occassion": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+        "sub_occassion": "1cc5915c-a54a-4a2d-8352-c9aca50efae2",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "634f91d0-d81e-40ec-a1fc-1359056ed029",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T06:25:19.375Z",
+        "date_updated": "2022-07-02T06:25:19.375Z",
+        "is_deleted": false,
+        "product_variant": "b9b8b6b8-a3eb-4a99-86c8-16a1956894b9",
+        "occassion": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+        "sub_occassion": "1cc5915c-a54a-4a2d-8352-c9aca50efae2",
+        "person_type": "77b5c075-f3a0-4a14-baf6-be29c3b8e7c3"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "7f38f0f9-f554-411d-8cf9-d4eab460521a",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T05:53:12.879Z",
+        "date_updated": "2022-08-17T05:53:12.879Z",
+        "is_deleted": false,
+        "product_variant": "bab34db4-e452-40a6-bdb6-c1c9aeb4f69b",
+        "occassion": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+        "sub_occassion": "c422a1ee-a4bb-499f-9aac-1d047b1a28f6",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "87265885-f989-41b8-ad5b-5e59ec438321",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-08-17T08:11:07.785Z",
+        "date_updated": "2022-08-17T08:11:07.785Z",
+        "is_deleted": false,
+        "product_variant": "7ad9a321-7377-4279-8f7b-039cb1622c85",
+        "occassion": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+        "sub_occassion": "c422a1ee-a4bb-499f-9aac-1d047b1a28f6",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "products.productforoccassion",
+    "pk": "9d054a92-40a2-4133-80b6-805d4800b43e",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-28T11:29:25.541Z",
+        "date_updated": "2022-07-28T11:29:25.541Z",
+        "is_deleted": false,
+        "product_variant": "5a74367c-36bd-452d-a1bd-b1ea10808646",
+        "occassion": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+        "sub_occassion": "1cc5915c-a54a-4a2d-8352-c9aca50efae2",
+        "person_type": "7a090347-2d22-4da2-b6fe-66c1915c85dd"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "2c20b083-4206-465f-90fc-bd377784e1f4",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T06:22:05.927Z",
+        "date_updated": "2022-06-24T06:22:05.927Z",
+        "is_deleted": false,
+        "person_type": "family"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "4db1a861-30b5-4db3-b578-1e2fd2c84816",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-08T06:55:44.956Z",
+        "date_updated": "2022-06-08T06:55:44.956Z",
+        "is_deleted": true,
+        "person_type": "Female"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "77b5c075-f3a0-4a14-baf6-be29c3b8e7c3",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T06:19:53.176Z",
+        "date_updated": "2022-06-24T06:19:53.176Z",
+        "is_deleted": false,
+        "person_type": "wife"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "7a090347-2d22-4da2-b6fe-66c1915c85dd",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:51:08.975Z",
+        "date_updated": "2022-06-24T05:51:08.975Z",
+        "is_deleted": false,
+        "person_type": "friend"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "c8c3890b-e22a-4714-8b0a-67043234e054",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T06:20:21.982Z",
+        "date_updated": "2022-06-24T06:20:21.982Z",
+        "is_deleted": false,
+        "person_type": "co-worker"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "da2e5959-43ac-4e74-bfaa-dd52f165ae6a",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-08T06:55:34.753Z",
+        "date_updated": "2022-06-08T06:55:39.065Z",
+        "is_deleted": true,
+        "person_type": "Male"
+    }
+},
+{
+    "model": "general.persontype",
+    "pk": "e8146e04-f625-4317-8bc8-bd96453dd1c3",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T06:20:06.110Z",
+        "date_updated": "2022-06-24T06:20:06.110Z",
+        "is_deleted": false,
+        "person_type": "husband"
+    }
+},
+{
+    "model": "general.occassion",
+    "pk": "53151ed6-0139-4a13-8fb9-91345dc1a226",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-18T09:48:00.706Z",
+        "date_updated": "2022-07-18T09:48:00.706Z",
+        "is_deleted": false,
+        "occassion": "Marrige",
+        "occassion_image": "lessons/images/How-to-pick-the-perfect-wedding-gift.webp"
+    }
+},
+{
+    "model": "general.occassion",
+    "pk": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-08T06:54:30.795Z",
+        "date_updated": "2022-06-08T06:54:30.795Z",
+        "is_deleted": false,
+        "occassion": "Birthday",
+        "occassion_image": "lessons/images/IMG_20220608_122317.jpg"
+    }
+},
+{
+    "model": "general.occassion",
+    "pk": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:49:41.892Z",
+        "date_updated": "2022-06-24T05:49:41.892Z",
+        "is_deleted": false,
+        "occassion": "Anniversary",
+        "occassion_image": "lessons/images/image1.webp"
+    }
+},
+{
+    "model": "general.suboccassion",
+    "pk": "1cc5915c-a54a-4a2d-8352-c9aca50efae2",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-24T05:50:12.519Z",
+        "date_updated": "2022-06-24T05:50:12.519Z",
+        "is_deleted": false,
+        "occassion": "eefe9319-3e58-4111-9ead-d38b88df53aa",
+        "sub_occassion": "Wedding Anniversary",
+        "sub_occassion_image": "occasion/subocassions/images/image1.webp"
+    }
+},
+{
+    "model": "general.suboccassion",
+    "pk": "c422a1ee-a4bb-499f-9aac-1d047b1a28f6",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-08T06:54:47.556Z",
+        "date_updated": "2022-07-02T07:24:42.170Z",
+        "is_deleted": false,
+        "occassion": "641674e9-5091-48ff-9c22-2f1e89b5ea84",
+        "sub_occassion": "Birthday",
+        "sub_occassion_image": "occasion/subocassions/images/51ra2sPqKnL._AC_SY780_FMwebp_.webp"
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "1dfda781-4fd8-4780-a162-d86dc77bb88e",
+    "fields": {
+        "auto_id": 11,
+        "creator": 312,
+        "updater": 312,
+        "date_added": "2022-07-27T12:27:03.576Z",
+        "date_updated": "2022-07-27T12:27:03.576Z",
+        "is_deleted": false,
+        "user": 312,
+        "email": null,
+        "name": "",
+        "phone": "8111820995",
+        "otp": "3099",
+        "password": "gAAAAABi4S8XgmhYvMGgJBbE3inwEqSR4QpdxEc19K7z6S7knumznU-5QYxXV7NqsWFNR4qLBhkNab69J11Zr8qihJBMHSltPg==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "23686fbc-1c8f-46fa-8ff0-b271a5469f4a",
+    "fields": {
+        "auto_id": 17,
+        "creator": 318,
+        "updater": 318,
+        "date_added": "2022-08-15T06:02:39.263Z",
+        "date_updated": "2022-08-15T06:02:39.263Z",
+        "is_deleted": false,
+        "user": 318,
+        "email": null,
+        "name": "Mohammed Nafih Yuseph",
+        "phone": "8593908025",
+        "otp": "5305",
+        "password": "gAAAAABi-eF_jiESYX8jLc6gdNrSUKre-i4RR-8vmSrtbw9GyhXWUThGVjKqquzSzOYfE_c9HMIrLAH0Fv7RPa8FdA0B3_6Pjg==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "2b17be19-ebe8-4547-9dd4-52e5b2a670ae",
+    "fields": {
+        "auto_id": 2,
+        "creator": 3,
+        "updater": 3,
+        "date_added": "2022-07-12T05:28:06.927Z",
+        "date_updated": "2022-07-12T05:28:06.927Z",
+        "is_deleted": false,
+        "user": 3,
+        "email": "mnaseefklpm@gmail.com",
+        "name": null,
+        "phone": "1234567890",
+        "otp": "5257",
+        "password": "gAAAAABizQZm4--Nw74q0ad-v3MG1VbULmPUn_sCt3CxDIVbPtgx3b0PebiL0ztpuMkRVFrLpurZBm9O5R3XEo-sJ3ectvOwKA==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "2bf7f4af-085e-442f-b601-20453d343d59",
+    "fields": {
+        "auto_id": 5,
+        "creator": 6,
+        "updater": 6,
+        "date_added": "2022-07-19T10:58:29.724Z",
+        "date_updated": "2022-07-19T10:58:29.724Z",
+        "is_deleted": false,
+        "user": 6,
+        "email": null,
+        "name": "Junaid Hisham",
+        "phone": "9846945506",
+        "otp": "3893",
+        "password": "gAAAAABi1o5VzOb3-_4-WQ4P-cE75bPefQFjoQB_FFQvSo4fyi5osiov1DLndcZ_uetwLip0kS2dQ3T7lm-_v_K65BFkHCnJjg==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "347ef980-cd30-46d5-b947-820d3363ea19",
+    "fields": {
+        "auto_id": 20,
+        "creator": 321,
+        "updater": 321,
+        "date_added": "2022-08-22T12:34:29.225Z",
+        "date_updated": "2022-08-22T12:34:29.225Z",
+        "is_deleted": false,
+        "user": 321,
+        "email": null,
+        "name": "Fasna",
+        "phone": "7034537972",
+        "otp": "9875",
+        "password": "gAAAAABjA3fVa8AdZSbuV0_fqdc3OMed04LrgHOFAXN2lMcWSDjVt77dKGGW7dFS7HSai49D5IAm48fYta2oj68g7flvOYjH0g==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "59561dba-aacb-4147-a48b-d71be867cb5b",
+    "fields": {
+        "auto_id": 19,
+        "creator": 320,
+        "updater": 320,
+        "date_added": "2022-08-21T20:28:24.732Z",
+        "date_updated": "2022-08-21T20:28:24.732Z",
+        "is_deleted": false,
+        "user": 320,
+        "email": null,
+        "name": "Jishnu ",
+        "phone": "9747964072",
+        "otp": "3163",
+        "password": "gAAAAABjApVoDz8Dhe3D9MNlRtpHgJEItCvDzJa7Tj_nFGxhdauL-T9yn2m9h2KzOz4edEomftLPaR53TP7hy2-bkDzQi0DNyw==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "5b5f8849-7ca7-431b-84c4-387a460d0e26",
+    "fields": {
+        "auto_id": 1,
+        "creator": 2,
+        "updater": 2,
+        "date_added": "2022-07-06T05:03:15.125Z",
+        "date_updated": "2022-07-06T05:03:15.125Z",
+        "is_deleted": false,
+        "user": 2,
+        "email": "mnaseefklpm@gmail.com",
+        "name": null,
+        "phone": "7034513604",
+        "otp": "5736",
+        "password": "gAAAAABixReT6hht2TTgBSWw0qyEde4MjP14xyepBZ5oLIDi5l2RaSn-83UqVq4ak8fH71unJ3UGs1LPe4bwLofiWacnB_jfNQ==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "5c4fe742-81f8-4c58-ba55-86d614b9c470",
+    "fields": {
+        "auto_id": 9,
+        "creator": 309,
+        "updater": 309,
+        "date_added": "2022-07-27T06:51:47.334Z",
+        "date_updated": "2022-07-27T06:51:47.334Z",
+        "is_deleted": false,
+        "user": 309,
+        "email": null,
+        "name": "John doe",
+        "phone": "9539794989",
+        "otp": "2324",
+        "password": "gAAAAABi4OCDEft8CGHsHLeUCceKvPgCeEWHKCB7ORJEWl7vYSEkSXnfLiaH1Dp_yHReoHcwoLGbzLf3zogbde823t9WFAS5oQ==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "7a396026-e032-4b5b-96eb-3276290922b8",
+    "fields": {
+        "auto_id": 12,
+        "creator": 313,
+        "updater": 313,
+        "date_added": "2022-07-27T13:14:18.596Z",
+        "date_updated": "2022-07-27T13:14:18.596Z",
+        "is_deleted": false,
+        "user": 313,
+        "email": null,
+        "name": "MuhammadMusheer",
+        "phone": "9447583282",
+        "otp": "0335",
+        "password": "gAAAAABi4ToqouNhDjerNGfIte41Q4aNgWZa1-_HYuBULybuVswudDi7xLWP2ZmBx8BtN_tf-1SVs9ddR3u65_KiR4RUb1j2vA==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "9d9db4db-f52c-48af-830d-d7f3fa29d885",
+    "fields": {
+        "auto_id": 6,
+        "creator": 209,
+        "updater": 209,
+        "date_added": "2022-07-22T07:02:13.590Z",
+        "date_updated": "2022-07-22T07:02:13.590Z",
+        "is_deleted": false,
+        "user": 209,
+        "email": "test@gmail.com",
+        "name": null,
+        "phone": "1122334455",
+        "otp": "2986",
+        "password": "gAAAAABi2kt1epRFvc6yHFlMjV29rMRFwHNPX4sGJsEZHk0p6EN8FoFyO2dhpmJuLoBfzbSepk1a04i2y_qAsqxKi4uJ6rnaKw==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "ad9d57d5-f598-4ac3-a52a-825296d7897e",
+    "fields": {
+        "auto_id": 16,
+        "creator": 317,
+        "updater": 317,
+        "date_added": "2022-08-14T18:53:33.125Z",
+        "date_updated": "2022-08-14T18:53:33.125Z",
+        "is_deleted": false,
+        "user": 317,
+        "email": null,
+        "name": "Noora Faiziya TP ",
+        "phone": "8137928082",
+        "otp": "6732",
+        "password": "gAAAAABi-UStD4XUzHkVDD9amc63AvhLy586Di9BjKzDNGub3VbIOqnygHP09l06wWFvJ-HMFQG0582daZtams8BhsWrGmKRAA==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "b9f5bb07-2da1-4fda-9e80-bcd6893b82cc",
+    "fields": {
+        "auto_id": 4,
+        "creator": 5,
+        "updater": 5,
+        "date_added": "2022-07-18T13:10:29.539Z",
+        "date_updated": "2022-07-18T13:10:29.539Z",
+        "is_deleted": false,
+        "user": 5,
+        "email": "dettgifts@gmail.com",
+        "name": null,
+        "phone": "8589998009",
+        "otp": "6658",
+        "password": "gAAAAABi1VvFxgFxCYGIPgY-812yuWkESTaz4G3c6N1Rhf_51_Ul6ACEAVopDQHOKt1h85nXr-9X0nsAay6DUKgt7agM-9xBiw==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "df2dd675-b802-460b-9881-571562d94fb0",
+    "fields": {
+        "auto_id": 8,
+        "creator": 308,
+        "updater": 308,
+        "date_added": "2022-07-26T10:59:00.780Z",
+        "date_updated": "2022-07-26T10:59:00.780Z",
+        "is_deleted": false,
+        "user": 308,
+        "email": null,
+        "name": "Prasin",
+        "phone": "9746323264",
+        "otp": "2492",
+        "password": "gAAAAABi38j01_duiOC0nmJCi4n_ZGzcqpeh3uJUL8LrakbrzlxtUX808C3XX9tYblXMf9oF416ss6FyisP_RgTDFVtZpfgmgA==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "ea3f6907-26d8-4d79-aa9d-ffb234b2ec21",
+    "fields": {
+        "auto_id": 15,
+        "creator": 316,
+        "updater": 316,
+        "date_added": "2022-07-31T07:49:20.116Z",
+        "date_updated": "2022-07-31T07:49:20.116Z",
+        "is_deleted": false,
+        "user": 316,
+        "email": null,
+        "name": "muhammed miladh",
+        "phone": "9447980634",
+        "otp": "0769",
+        "password": "gAAAAABi5jQABwTAKCv_3sTTo3DaNBaT8N2bhkc5SEG4rhxJ1IUdIvbzdqMHhBjAYVqiBM0LMNl6miado2lXRMOGg22VlTkujQ==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": "f1c1675d-304c-4b40-993a-cbe6c601205b",
+    "fields": {
+        "auto_id": 18,
+        "creator": 319,
+        "updater": 319,
+        "date_added": "2022-08-17T08:16:12.108Z",
+        "date_updated": "2022-08-17T08:16:12.108Z",
+        "is_deleted": false,
+        "user": 319,
+        "email": null,
+        "name": "shalu",
+        "phone": "9544668210",
+        "otp": "9349",
+        "password": "gAAAAABi_KPM3xaE_kjJRbNW8YvHci81_-uzLAYqOumknb0lXOUnhqMF3u2ljGRbhIgqwkPmz5qL3XubtDHVPDtLcF2KdltxgQ==",
+        "last_name": null,
+        "image": ""
+    }
+},
+{
+    "model": "orders.order",
+    "pk": "8017ce0b-c044-43c3-93e2-862de6c437c2",
+    "fields": {
+        "auto_id": 4,
+        "creator": 319,
+        "updater": 319,
+        "date_added": "2022-08-17T08:17:24.203Z",
+        "date_updated": "2022-08-17T08:17:24.203Z",
+        "is_deleted": false,
+        "billing_name": "shalu",
+        "billing_phone": "9544668210",
+        "billing_address": "pathickal house",
+        "billing_street": "",
+        "billing_landmark": "",
+        "billing_city": "katapana",
+        "billing_state": "kerala",
+        "pincode": "685515",
+        "discount": "0.00",
+        "customer": "f1c1675d-304c-4b40-993a-cbe6c601205b",
+        "order_status": "10",
+        "total_amt": "1600.18",
+        "payment_method": "upi",
+        "payment_status": "",
+        "delivery_agent": null,
+        "card_name": null,
+        "card_number": null,
+        "transaction_id": "pay_K6dDZATt36EYFD",
+        "payment_order_id": "order_K6dCqz8BZaibIT",
+        "delivery_date": null,
+        "courier_service_charge": 0,
+        "sac_code": null,
+        "invoice_id": "DT2223/0004",
+        "tax_price": "0.00"
+    }
+},
+{
+    "model": "orders.order",
+    "pk": "a1e09c7f-55c0-4bcb-beec-b57d0edeba27",
+    "fields": {
+        "auto_id": 2,
+        "creator": 308,
+        "updater": 308,
+        "date_added": "2022-07-26T11:00:13.172Z",
+        "date_updated": "2022-07-26T11:00:13.172Z",
+        "is_deleted": false,
+        "billing_name": "test",
+        "billing_phone": "987654321",
+        "billing_address": "sghs",
+        "billing_street": "",
+        "billing_landmark": "",
+        "billing_city": "gags",
+        "billing_state": "gqgsg",
+        "pincode": "686252",
+        "discount": "0.00",
+        "customer": "df2dd675-b802-460b-9881-571562d94fb0",
+        "order_status": "ordered",
+        "total_amt": "1099.18",
+        "payment_method": "upi",
+        "payment_status": "",
+        "delivery_agent": null,
+        "card_name": null,
+        "card_number": null,
+        "transaction_id": "pay_JxyFYobi0ovqIO",
+        "payment_order_id": "order_JxyEByLh6z24sD",
+        "delivery_date": null,
+        "courier_service_charge": 0,
+        "sac_code": null,
+        "invoice_id": "DT2223/0002",
+        "tax_price": "0.00"
+    }
+},
+{
+    "model": "orders.order",
+    "pk": "a269e3cf-eca0-4bb1-bbd9-c1bff2c4feaf",
+    "fields": {
+        "auto_id": 5,
+        "creator": 312,
+        "updater": 312,
+        "date_added": "2022-08-24T04:33:21.022Z",
+        "date_updated": "2022-08-23T18:30:00Z",
+        "is_deleted": false,
+        "billing_name": "Pushpa",
+        "billing_phone": "1234567890",
+        "billing_address": null,
+        "billing_street": "NNTKV",
+        "billing_landmark": "School",
+        "billing_city": "TVM",
+        "billing_state": "Kerala",
+        "pincode": null,
+        "discount": "0.00",
+        "customer": "1dfda781-4fd8-4780-a162-d86dc77bb88e",
+        "order_status": "50",
+        "total_amt": "1600.00",
+        "payment_method": "cod",
+        "payment_status": "10",
+        "delivery_agent": null,
+        "card_name": null,
+        "card_number": null,
+        "transaction_id": "5454545454",
+        "payment_order_id": "45454545454",
+        "delivery_date": 13,
+        "courier_service_charge": 0,
+        "sac_code": null,
+        "invoice_id": "DT2223/0005",
+        "tax_price": "288.00"
+    }
+}
+]

@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<style>
+  .d-none{
+    display:none;
+  }
+</style>
+
+
+<section id="content">
+  <div class="container">
+    <div class="c-header">
+      <h2>{{title}}</h2>
+    </div>
+
+    <div class="action-header palette-theme {{current_theme}} bg clearfix">
+      <div class="ah-label hidden-xs palette-White text">{{title}}</div>
+
+      <div class="ah-search">
+        <form action="" method="get">
+          <input class="ahs-input" name="q" placeholder="Start typing..." type="text">
+
+          <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+          <input class="hidden" type="submit"/>
+        </form>
+      </div>
+
+      <ul class="ah-actions actions a-alt">
+
+        {% if instance %}
+        <li>
+          <a href="" title="Create Customer">
+            <i class="zmdi zmdi-plus"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'products:edit_product' pk=instance.pk %}" title="View Customer">
+            <i class="zmdi zmdi-eye"></i>
+          </a>
+        </li>
+        <li>
+          <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+             data-title="Are you sure?" href="" title="Delete Customer">
+            <i class="zmdi zmdi-delete"></i>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <form action="{{url}}" class="ajax reset {% if redirect %}redirect{% endif %}" method="post" novalidate enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body card-padding">
+              <div class="form-group fg-line">
+                <label for="{{ form.product_category.id_for_label }}">
+                  {{ form.product_category.label }}
+                  {% if form.product_category.field.required %}
+                  <small class="star">*</small>
+                  {% endif %}
+
+                  {% if form.product_category.help_text %}
+                  <span class="help-text-icon zmdi zmdi-info-outline"
+                        data-content="{{ form.product_category.help_text }}"
+                        data-original-title="Field Info" data-placement="left"
+                        data-toggle="popover" data-trigger="hover"
+                        title=""></span>
+                  {% endif %}
+                </label>
+                {{ form.product_category }}
+
+                {% if form.product_category.errors %}
+                <label class="error">{{ form.product_category.errors.as_text }}</label>
+                {% endif %}
+              </div>
+              <div class="form-group fg-line">
+                <label for="{{ form.name.id_for_label }}">
+                  {{ form.name.label }}
+                  {% if form.name.field.required %}
+                  <small class="star">*</small>
+                  {% endif %}
+
+                  {% if form.name.help_text %}
+                  <span class="help-text-icon zmdi zmdi-info-outline"
+                        data-content="{{ form.name.help_text }}"
+                        data-original-title="Field Info" data-placement="left"
+                        data-toggle="popover" data-trigger="hover"
+                        title=""></span>
+                  {% endif %}
+                </label>
+                {{ form.name }}
+
+                {% if form.name.errors %}
+                <label class="error">{{ form.name.errors.as_text }}</label>
+                {% endif %}
+              </div>
+              <div class="form-group fg-line">
+                <label for="{{ form.meta_description.id_for_label }}">
+                  {{ form.meta_description.label }}
+                  {% if form.meta_description.field.required %}
+                  <small class="star">*</small>
+                  {% endif %}
+
+                  {% if form.meta_description.help_text %}
+                  <span class="help-text-icon zmdi zmdi-info-outline"
+                        data-content="{{ form.meta_description.help_text }}"
+                        data-original-title="Field Info" data-placement="left"
+                        data-toggle="popover" data-trigger="hover"
+                        title=""></span>
+                  {% endif %}
+                </label>
+                {{ form.meta_description }}
+
+                {% if form.meta_description.errors %}
+                <label class="error">{{ form.meta_description.errors.as_text }}</label>
+                {% endif %}
+              </div>
+
+              <div class="form-group fg-line">
+                <label for="{{ form.product_description.id_for_label }}">
+                  {{ form.product_description.label }}
+                  {% if form.product_description.field.required %}
+                  <small class="star">*</small>
+                  {% endif %}
+
+                  {% if form.product_description.help_text %}
+                  <span class="help-text-icon zmdi zmdi-info-outline"
+                        data-content="{{ form.product_description.help_text }}"
+                        data-original-title="Field Info" data-placement="left"
+                        data-toggle="popover" data-trigger="hover"
+                        title=""></span>
+                  {% endif %}
+                </label>
+                {{ form.product_description }}
+
+                {% if form.product_description.errors %}
+                <label class="error">{{ form.product_description.errors.as_text }}</label>
+                {% endif %}
+              </div>
+              <div class="form-group fg-line ">
+                <label for="{{ form.feautured_image.id_for_label }}">
+                  {{ form.feautured_image.label }}
+                  {% if form.feautured_image.field.required %}
+                  <small class="star">*</small>
+                  {% endif %}
+
+                  {% if form.feautured_image.help_text %}
+                  <span class="help-text-icon zmdi zmdi-info-outline"
+                        data-content="{{ form.feautured_image.help_text }}"
+                        data-original-title="Field Info" data-placement="left"
+                        data-toggle="popover" data-trigger="hover"
+                        title=""></span>
+                  {% endif %}
+                </label>
+                {{ form.feautured_image }}
+
+                {% if form.feautured_image.errors %}
+                <label class="error">{{ form.feautured_image.errors.as_text }}</label>
+                {% endif %}
+              </div>
+
+              <!--                                shows on edit image if image exists-->
+                                {% if instance.feautured_image %}
+                                <p style="margin-top: 10px;"> Current <a href="{{ instance.feautured_image.url }}">{{ instance.feautured_image.url }}</a></p>
+                                {% endif %}
+
+            </div>
+          </div>
+
+        </div>
+
+        {% if is_create %}
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body card-padding">
+
+              <div class="form-group fg-line ">
+                <input type="hidden" name="code_type" id="code_type" value="">
+                <label for="">
+                  <button class="btn btn-primary btn-gst btn-hsn" data-url="{% url 'products:get_hsn_suggestions' %}" data-type="hsn">Hsn Code</button>
+                </label>
+                 <label for="">
+                  <button class="btn btn-primary btn-primary btn-gst btn-asc" data-url="{% url 'products:get_asc_suggestions' %}" data-type="asc">ASC Code</button>
+                </label>
+              </div>
+              <div class="forms-gst d-none">
+              <div class="form-group fg-line">
+                <div class="form-group fg-line">
+                <label for="id_name">
+                  <p id="gst_suggestions">Type the code to get suggestions</p>
+                </label>
+              </div>
+                <label for="id_name">
+                  Code
+                </label>
+                <input type="text" autocomplete="false"  name="code" class="form-control"  placeholder="Code" maxlength="256" required="" id="id_code">
+              </div>
+
+               <div class="form-group fg-line">
+                <label for="id_name">
+                  IGST
+                </label>
+                <input type="text" name="igst" class="form-control" placeholder="IGST" maxlength="256" required="" id="id_igst">
+              </div>
+              <div class="form-group fg-line">
+                <label for="id_name">
+                  SGST
+                </label>
+                <input type="text" name="sgst" class="form-control" placeholder="SGST" maxlength="256" required="" id="id_sgst">
+              </div>
+              <div class="form-group fg-line">
+                <label for="id_name">
+                  CGST
+                </label>
+                <input type="text" name="cgst" class="form-control" placeholder="CGST" maxlength="256" required="" id="id_cgst">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endif %}
+
+      </div>
+
+      <div>
+        <button class="btn btn-info waves-effect" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}
+{% block static %}
+{% load static %}
+<script src="{% static 'js/jquery.formset.js' %}" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('input[type=text]').focus(function () {
+	        $(this).select();
+	    		});
+
+	    		 $('.product_variant_formset table tr.form_set_row').formset({
+                prefix: '{{ product_variant_formset.prefix }}',
+                formCssClass: 'dynamic-formset1',
+                'added' : function (row) {
+                    row.find('.varient_item select').selectpicker();
+                }
+            });
+		  });
+</script>
+{{ form.media }}
+<script src="{% static 'js/add-js.js' %}"></script>
+{% endblock %}

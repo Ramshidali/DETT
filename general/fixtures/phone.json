@@ -1,0 +1,9 @@
+[
+	{
+	    "model": "general.Phone",
+	    "pk": 1,
+	    "fields": {
+	      "phone": 9846100100
+	    }
+	}
+]

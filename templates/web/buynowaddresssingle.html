@@ -1,0 +1,155 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+{% load web_templates_tags %}
+{% block content %}
+{%include 'web/include/navbar.html' %}
+
+    <div class="wrapper">
+        <div class="mainContainer">
+            <div class="headNav">
+                <h5>
+                    <small> Gift item/ </small><small>{{instance.product.product_category.category_name}} / </small>{{instance.product.name}}
+                </h5>
+            </div>
+            <div class="place-order-bottom">
+                <!-- add address -->
+
+                 <div class="left-product" style="display: block;">
+                    <div class="top">
+                        <div class="left-address">
+                            <p>Deliver to:
+                                <span>{{address.name}}</span>
+                            </p>
+                            <p>{{address_form.address_line1}}
+                                {{address.street}} {{address.state}}-{{address.pincode}}</p>
+                        </div>
+                        <a href="{% url 'web:buy_now_address' pk=instance.pk %}" class="change">CHANGE</a>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-image-container">
+                            <img src="{{instance.product.feautured_image.url}}" alt="" class="product-image">
+                        </div>
+                        <div class="contents">
+                            <h5 class="productTitle">{{instance.product.name}}</h5>
+                            <h6 class="subtitle">{{instance.title}}</h6>
+                            <div class="priceConatiner">
+                                <div class="amount">
+                                    <div class="imgContainer">
+                                        <img src="{% static 'web/images/icons/rupee.svg' %}" alt="Rupee" />
+                                    </div>
+                                    <h5 class="amountPrice">{{instance.price}}</h5>
+                                </div>
+                                <div class="mrp">
+                                    <span class="line"></span>
+                                    <div class="imgContainer">
+                                        <img src="{% static 'web/images/icons/rupee2.svg' %}" alt="Rupee" />
+                                    </div>
+                                    <h5 class="mrpPrice">{{instance.mrp}}</h5>
+                                </div>
+                                <div class="discount">
+                                    <h6 class="discountText">({{offer_rate|floatformat:-2}} % OFF)</h6>
+                                </div>
+                            </div>
+                            <div class="selectBox">
+                                
+                                <div class="rightBox">
+                                    <h5>Unit</h5>
+                                    <div class="selectRight">
+                                        <select name="format" id="format" onchange="variantFunction(this.value)">
+                                            <option value="" >{{instance.unit}} {{instance.uom}}</option>
+                                            {% for unit in units %}
+                                                {% if instance.pk != unit.pk %}
+                                                    <option value="{% url 'web:buy_now_address_next' pk=unit.pk %}" >{{unit.unit}} {{unit.uom}}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="rightBox">
+                                    <h5>Qty</h5>
+                                    <div class="selectRight">
+                                        <select name="format" id="format">
+                                            {% for stock in stocks %}
+                                                <option value="{{stock}}" >{{stock}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div> -->
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="price-details">
+                        <h3 class="title">Price Details</h3>
+                        {% with instance.pk|get_total_gst as amt %}
+                        <div class="price-split">
+                            Total MRP (include all taxes) <h5 class="price">₹{{amt.total_price}}</h5>
+                        </div>
+                        <div class="price-split">
+                            GST <h5 class="price">₹{{amt.gst_total}}</h5>
+                        </div>
+                        <div class="price-split">
+                            Delivery Charges <h5 class="price">₹0</h5>
+                        </div>
+                        <div class="price-split">
+                            Discount <h5 class="price">₹0</h5>
+                        </div>
+                        <span class="line"></span>
+                        <div class="total-price">Total Amount <h4 class="price">₹{{amt.total_price}}</h4>
+                        </div>
+                        {% endwith %}
+                    </div>
+                    <a href="{% url 'web:place_order' pk=instance.pk %}" class="place-order-button">Place Order</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("modal-close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+            $(".login-box").css({
+                display: "block",
+            });
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function variantFunction(url) {
+            window.location.replace(url);
+          }
+    </script>
+
+   {% endblock %}

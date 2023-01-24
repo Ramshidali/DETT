@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{title}}</div>
+
+            <div class="ah-search">
+                <form action="" method="get">
+                    <input class="ahs-input" name="q" placeholder="Start typing..." type="text">
+
+                    <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+                    <input class="hidden" type="submit"/>
+                </form>
+            </div>
+
+            <ul class="ah-actions actions a-alt">
+
+                {% if instance %}
+                <li>
+                    <a href="{% url 'general:create_due_day' %}" title="Create Due days">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'general:due_day' pk=instance.pk %}" title="View Due days">
+                        <i class="zmdi zmdi-eye"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'general:delete_due_day' pk=instance.pk %}"
+                       title="Delete Due days">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <form action="{{url}}" class="ajax reset {% if redirect %}redirect{% endif %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.courier_service_charge.id_for_label }}">
+                                    {{ form.courier_service_charge.label }}
+                                    {% if form.courier_service_charge.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.courier_service_charge.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.courier_service_charge.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.courier_service_charge }}
+
+                                {% if form.courier_service_charge.errors %}
+                                <label class="error">{{ form.courier_service_charge.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-group fg-line">
+                                <label for="{{ form.sac_code.id_for_label }}">
+                                    {{ form.sac_code.label }}
+                                    {% if form.sac_code.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.sac_code.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.sac_code.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.sac_code }}
+
+                                {% if form.sac_code.errors %}
+                                <label class="error">{{ form.sac_code.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-info waves-effect" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+{% block static %}
+{% load static %}
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('input[type=text]').focus(function () {
+	        $(this).select();
+	    		});
+		  });
+
+
+
+
+</script>
+{{ form.media }}
+{% endblock %}

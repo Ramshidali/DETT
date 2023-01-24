@@ -1,0 +1,212 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="spotlight">
+    <header>
+        <div class="head-main">
+            <h1 class="logo">
+                <a href="{% url 'web:index' %}">
+                    <img src="{% static 'web/images/icons/Group 27110.svg' %}" alt="dett logo" />
+                </a>
+            </h1>
+            <ul class="nav">
+                <li>
+                    <a data-value="home" class="{% if is_home %}active{% endif %}" href="{% url 'web:index' %}">Home</a>
+                </li>
+                {% comment %} <li>
+                    <a data-value="" class="{% if is_gift %}active{% endif %}" href="{% url 'web:gifts' %}">Gifts</a>
+                </li> {% endcomment %}
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a data-value="buisness" href="#buisness">Services</a>
+                </li>
+                <li>
+                    <a data-value="contact" class="con" href="#contact">Contact Us</a>
+                </li>
+                {% comment %} {{is_customer}} {% endcomment %}
+                {% comment %} {% if not is_customer %}
+                <li>
+                    <a href="#" class="login-button loginButton">Login</a>
+                </li>
+                {% else %}
+                <li>
+                    <a class="con" href="{% url 'web:profile' %}">Profile</a>
+                </li>
+                <li>
+                    <a class="con" href="{% url 'web:logout' %}">Logout</a>
+                </li>
+                {% endif %} {% endcomment %}
+            </ul>
+            <div class="mobile">
+                <img src="{% static 'web/images/icons/ham.svg' %}" alt="Menu" />
+            </div>
+
+            <div class="close">
+                <img src="{% static 'web/images/icons/close.png' %}" alt="Close" />
+            </div>
+        </div>
+    </header>
+    <section class="wrapper">
+        <div class="menu-container">
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    {% comment %} <li><a href="{% url 'web:gifts' %}">Gifts</a></li> {% endcomment %}
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#buisness">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    {% comment %} <li><a href="#login" class="loginButton">Login</a></li> {% endcomment %}
+                </ul>
+            </div>
+        </div>
+        {% if is_home %}
+        <div class="container" id="home">
+            <div class="left">
+                <div class="top wow animate__animated animate__zoomIn" data-wow-duration="2s">
+                    <div class="heading">
+                        <h2 class="first">We&nbsp;</h2>
+                        <h2 class="second">gift you&nbsp;</h2>
+                        <h2 class="third">happiness</h2>
+                    </div>
+                    <p class="content">
+                        The finest way of gifting from the country's
+                        most trusted brands by offering customized
+                        solutions to uphold sharing happiness. Gift them
+                        a token of appreciation.
+                    </p>
+                    <a href="https://gift.dett.app/" class="prebook__button">Pre-book now</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="spotlight-image">
+                    <img src="{% static 'web/images/vectors/GiftVector.png' %}" alt="gift-vector" />
+                </div>
+            </div>
+        </div>
+        <span class="dot-grid">
+            <img src="{% static 'web/images/vectors/DotGrid.png' %}" alt="dot-grid" />
+        </span>
+        {% endif %}
+    </section>
+</section>
+        <!--(#spotlight > .wrapper)-->
+        <div id="about">
+            <div class="wrapper">
+                <div class="left-box">
+                    <div class="thumb">
+                        <img
+                            src="{% static 'web/images/vectors/girlvectorpng.png' %}"
+                            alt="Image"
+                        />
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="title-box">
+                        <div class="dotted">
+                            <h3
+                                class="wow animate__animated animate__fadeInUp"
+                                data-wow-duration="2s"
+                            >
+                                Know about <span> us</span>
+                            </h3>
+                            <img src="{% static 'web/images/vectors/DotGrid.png' %}" alt="Image" />
+                        </div>
+                        <p
+                            class="wow animate__animated animate__fadeInUp"
+                            data-wow-duration="2s"
+                        >
+                            Dett business delivers a truly unique and tailored
+                            gifting experience to customers and general
+                            merchandise services by maintaining a network of
+                            partners to maximise their revenue and services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #about -->
+        <!-- <section class="side-round"> -->
+        <div id="buisness">
+            <div class="wrapper">
+                <div
+                    class="title-box wow animate__animated animate__fadeInDown"
+                >
+                    <h3>Business you want to <span> know</span></h3>
+                </div>
+                <div class="bs-bottom">
+                    <div class="cards">
+                        <div class="card card-one">
+                            <div class="top">
+                                <div class="img thumb">
+                                    <img src="{% static 'web/images/TSHIRT.png' %}" alt="Image" />
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <h5>Dett gift</h5>
+                                <p>
+                                    The platform started out of a determination
+                                    to connect people with the power of
+                                    gratitude and sharing happiness. Our vision
+                                    to bring more joy to the world through
+                                    giving.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dotted">
+                            <img src="{% static 'web/images/vectors/BigGrid.svg' %}" alt="Image" />
+                        </div>
+
+                        <div class="card card-two">
+                            <div class="top">
+                                <div class="img thumb">
+                                    <img
+                                        src="{% static 'web/images/COMPUTER.png' %}"
+                                        alt="Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <h5>Merchandise opportunity</h5>
+                                <p class="spcl">
+                                    Merchandising Services commits to provide
+                                    exceptional client services, by maximising
+                                    revenues and protecting brand quality and
+                                    integrity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #buisness -->
+        <div id="provide">
+            <div
+                class="wrapper wow animate__animated animate__zoomIn"
+                data-wow-delay=".3s"
+            >
+                <div class="title-box">
+                    <h3>We are proud to say</h3>
+                    <h3>
+                        We provide you an experience of <br /><span>
+                            quality and happiness</span
+                        >
+                    </h3>
+                </div>
+                <div class="content">
+                    <div class="top-box">
+                        <h5>Are you with us<span> &nbsp;?</span></h5>
+                    </div>
+                    <div class="bottom-box">
+                        <a href="#" class="button">Quality partnership</a>
+                        <a href="#" class="button">Share happiness</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #provide -->
+        <!-- </section> -->
+{% endblock %}

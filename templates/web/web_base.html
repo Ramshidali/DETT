@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>We gift you happiness | Dett</title>
+
+    <meta name="description"
+        content="DeTT | The finest way of gifting from the country's most trusted brands by offering customized solutions to uphold sharing happiness. Gift them a token of appreciation." />
+    <meta name="keywords" content="" />
+    <meta property="og:description"
+        content="The finest way of gifting from the country's most trusted brands by offering customized solutions to uphold sharing happiness. Gift them a token of appreciation." />
+    <meta property="og:title" content="We gift you happiness | DeTT" />
+    <meta property="og:image" content="fonts/favicon/android-icon-192x192.png' %}" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/condition.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/meterial.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/poppins.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'web/css/slick-theme.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'web/fonts/favicon/apple-icon-57x57.png' %}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'web/fonts/favicon/apple-icon-60x60.png' %}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'web/fonts/favicon/apple-icon-72x72.png' %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'web/fonts/favicon/apple-icon-76x76.png' %}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'web/fonts/favicon/apple-icon-114x114.png' %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'web/fonts/favicon/apple-icon-120x120.png' %}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'web/fonts/favicon/apple-icon-144x144.png' %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'web/fonts/favicon/apple-icon-152x152.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'web/fonts/favicon/apple-icon-180x180.png' %}" />
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{% static 'web/fonts/favicon/android-icon-192x192.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web/fonts/favicon/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'web/fonts/favicon/favicon-96x96.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/fonts/favicon/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'web/fonts/favicon/manifest.json' %}" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png' %}" />
+    <meta name="theme-color" content="#ffffff" />
+
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock content %}
+    <footer>
+        <div class="wrapper" id="contact">
+            <div class="logo">
+                <a href="{% url 'web:index' %}">
+                    <img src="{% static 'web/images/icons/Group 27110.svg' %}" alt="Logo" />
+                </a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://instagram.com/dett_world?igshid=kuvmezv7uihn" target="_blank"><img
+                                src="{% static 'web/images/icons/Instagram.png' %}" alt="Image" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Dett-108870844633945" target="_blank"><img
+                                src="{% static 'web/images/icons/Facebook.png' %}" alt="Image" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/dettworld" target="_blank"><img
+                                src="{% static 'web/images/icons/linkedin.svg' %}" alt="Image" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="{% url 'web:index' %}">Home</a></li>
+                    <li><a href="{% url 'web:index' %}">About us</a></li>
+                    <li><a href="{% url 'web:index' %}">Services</a></li>
+                    {% comment %} <li><a href="{% url 'web:gifts' %}">Gifts</a></li> {% endcomment %}
+                </ul>
+            </div>
+            <div class="address">
+                <p>Dett Private Limited,</p>
+                <p>3rd Floor, 41/418 Z,Cabin no 2,</p>
+                <p>Oberon Mall, NH Ln, Padivattom,</p>
+                <p> Edappally,Ernakulam, Kerala 682024</p>
+            </div>
+            <div class="connect">
+                <a href="mailto:hello@dett.app"><span class="zmdi zmdi-email"></span> hello@dett.app</a>
+                <a href="tel:+91 858 999 8001"><span class="zmdi zmdi-phone"></span> +91 858 999
+                    8001</a>
+            </div>
+            <div class="nav-list" style="margin-top:30px;">
+                <ul>
+                    <li><a href="{% url 'web:privacy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'web:terms' %}">Terms & Conditions</a></li>
+                    <li><a href="{% url 'web:return' %}">Return Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <p>
+                ©2021 Dett. All rights reserved. | A startup incubated and
+                accelerated by
+                <a href="https://talrop.com/worktech" target="_blank">Talrop</a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modalSection" class="loginModal">
+        <div class="container">
+            <span class="close">X</span>
+            <div class="modal-box">
+                <div class="left-image-container">
+                    <img src="{% static 'web/images/giftwall.png' %}" alt="" />
+                </div>
+                <div class="right">
+                    <h1 class="logo">
+                        <img src="{% static 'web/images/icons/Group 27110.svg' %}" alt="dett logo" />
+                    </h1>
+                    <div class="main-container">
+                        <div class="signup-phone" id="signup_sec">
+                            <div class="right-container">
+                                <div class="inner-container">
+                                    <div class="login-form">
+                                        <h5>Signup</h5>
+                                        <h6>Enter your 10-digit mobile number to get registered with Dett.</h6>
+                                        <input type="text" placeholder="Name" id="login_name">
+                                        <p class="required_text" id="required_text_name"
+                                            style="display: none; color: red; font-size: 10px; text-align: left;">
+                                            *required
+                                        <p>
+                                            <input type="number" placeholder="Phone number" id="login-phone"
+                                                pattern="/^-?\d+\.?\d*$/"
+                                                onkeypress="if(this.value.length==10) return false;">
+                                        <p class="required_text" id="required_text_phone"
+                                            style="display: none; color: red; font-size: 10px; text-align: left;">
+                                            *required
+                                        <p>
+                                    </div>
+                                    <div class="submit-button" id="submit_phone"
+                                        data-url="{% url 'web:otp_generation' %}">Submit</div>
+                                </div>
+                                <div class="bottom-text">Already have an account? <span
+                                        class="loging-button-s1">Login</span></div>
+                            </div>
+                        </div>
+                        <div class="login-phone signup-phone" id="signin_sec" style="display: none;">
+                            <div class=" right-container">
+                                <div class="inner-container">
+                                    <div class="login-form">
+                                        <h5>Login</h5>
+                                        <h6>Hello...We gift you happiness.</h6>
+                                        <input type="number" placeholder="Phone number" id="login-phone"
+                                            pattern="/^-?\d+\.?\d*$/"
+                                            onkeypress="if(this.value.length==10) return false;">
+                                        <p class="required_text" id="required_text_phone"
+                                            style="display: none; color: red; font-size: 10px; text-align: left;">
+                                            *required
+                                        <p></p>
+                                    </div>
+                                    <div class="submit-button" id="phone_login"
+                                        data-url="{% url 'web:otp_generation' %}">Submit</div>
+                                </div>
+                                <div class="bottom-text">Don't have an account? <span class="signup-button-s2">Sign
+                                        Up</span></div>
+                            </div>
+                        </div>
+                        <div class="verify-otp signup-phone" style="display: none;">
+                            <div class="right-container">
+                                <div class="inner-container">
+                                    <div class="login-form">
+                                        <h5>Verify with OTP</h5>
+                                        <h6 class="sub-text">Please enter the four digit OTP which has been sent to +91
+                                            <span id="number">9632147852</span>
+                                        </h6>
+                                        <input type="hidden" id="user_name">
+                                        <div class="otp-box">
+                                            <form action="" class="mt-5">
+                                                <div>
+                                                    <input class="otp inputOtp" type="text" id="otp_one" maxlength=1>
+                                                    <input class="otp inputOtp" type="text" id="otp_two" maxlength=1>
+                                                    <input class="otp inputOtp" type="text" id="otp_three" maxlength=1>
+                                                    <input class="otp inputOtp" type="text" id="otp_four" maxlength=1>
+                                                </div>
+                                                <div class="forgotSection">
+                                                    <h6 class="error" id="required_text_otp"
+                                                        style="display: none; color: red; font-size: 14px;">
+                                                    </h6>
+                                                    <h6 class="sub-text">Resend OTP in
+                                                        {% comment %} <span>00: 26 s</span> {% endcomment %}
+                                                    </h6>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="submit-button" id="otp_validation"
+                                        data-url="{% url 'web:verify_otp' %}">Submit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if is_addressform %}
+    <div id="modalSection" class="add-address-modal addressModal" style="display:none;">
+        <div class="container">
+            <span class="close">X</span>
+            <form class="modal-box" method="POST" id="address_form" enctype="multipart/form-data"
+                action="{% url 'web:buy_now_add_address' pk=instance.pk %}">
+                {% csrf_token %}
+                <h3 class="title">Add Address</h3>
+                <div class="forms">
+                    {{address_form.name}}
+                    {{address_form.phone}}
+                    <input type="email" name="email" id="email" placeholder="email">
+                    {{address_form.pincode}}
+                    {{address_form.street}}
+                    {{address_form.city}}
+                    {{address_form.landmark}}
+                    {{address_form.state}}
+                    {{address_form.address_line1}}
+                </div>
+                <div>
+                    <input type="radio" value="home" name="address_type" id="at_home"><label
+                        for="at_home">Home</label><br>
+                    <input type="radio" value="office" name="address_type" id="at_office"><label
+                        for="at_office">Office</label>
+                </div>
+                <div class="buyNowBtn">
+                    <input type="submit" id="myBtn" class="botton" value="Add Address">
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+
+    <script src="{% static 'web/js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'web/js/slick.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'web/js/script.js' %}" type="text/javascript"></script>
+    <script src="{% static 'web/js/wow.js' %}" type="text/javascript"></script>
+    <script src="{% static 'web/js/slick.js' %}" type="text/javascript"></script>
+    <script src="{% static 'web/js/ajax.js' %}" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/0463d775c2.js" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+        $(".inputOtp").on("keyup keypress", function (e) {
+            if (e.keyCode == 8) {
+                $(this).prev().select().focus()
+            } else {
+                let id = $(this).attr("id")
+                this.value = this.value.replace(/[^0-9]/g, '');
+
+                if (this.value != "") {
+                    $(`#${id}+input`).focus()
+                }
+            }
+        })
+    </script>
+    {% block static %}
+
+    {% endblock %}
+</body>
+
+</html>

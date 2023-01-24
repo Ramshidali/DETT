@@ -1,0 +1,274 @@
+{% load static %}
+<aside class="sidebar" id="s-main-menu">
+  <div class="smm-header">
+    <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+  </div>
+
+  <ul class="smm-alerts">
+    <li data-ma-action="sidebar-open" data-ma-target="user-alerts" data-user-alert="sua-messages">
+      <i class="zmdi zmdi-email"></i>
+    </li>
+    <li class="p-relative" data-ma-action="sidebar-open" data-ma-target="user-alerts"
+        data-user-alert="sua-notifications">
+      <i class="zmdi zmdi-notifications"></i>
+      <span class="notification-count palette-Red-500 bg">0</span>
+    </li>
+    <li data-ma-action="sidebar-open" data-ma-target="user-alerts" data-user-alert="sua-tasks">
+      <i class="zmdi zmdi-view-list-alt"></i>
+    </li>
+  </ul>
+
+  <ul class="main-menu">
+    <li class="active">
+      <a href="{% url 'app' %}"><i class="zmdi zmdi-home"></i>Dashboard</a>
+    </li>
+     <li class="{% if is_enquiry %} active {% endif %}">
+      <a href="{% url 'promotions:enquiries' %}"><i class="zmdi zmdi-headset-mic"></i>Enquiries</a>
+    </li>
+    </li>
+     <li class="{% if is_enquiry %} active {% endif %}">
+      <a href="{% url 'customers:upcoming_moments' %}"><i class="zmdi zmdi-notifications-active"></i>Upcoming Moments</a>
+    </li>
+    <li class="sub-menu {% if is_extra %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-widgets"></i>Other Charges</a>
+      <ul>
+        <li class="{% if is_active_extra %}active{% endif %} m-b-5">
+                    <a class="pull-left p-r-0" href="{% url 'general:extras' pk=1 %}" title="Delivery">Charges</a>
+
+          <a class="pull-left p-r-0" href="{% url 'general:extras' pk=1 %}" title="active orders"> <span class="pull-right glyphicon glyphicon-edit"></span></a>
+
+          <div class="clearfix"></div>
+        </li>
+
+      </ul>
+    </li>
+
+    <li class="sub-menu {% if is_banner %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-window-restore"></i>App Banners</a>
+      <ul>
+        <li class="{% if is_banners %}active{% endif %} m-b-5">
+                    <a class="pull-left p-r-0" href="{% url 'general:sliders' %}" title="Delivery">Banners</a>
+
+          <a class="pull-left p-r-0" href="{% url 'general:create_slider' %}" title="create slider"> <span class="pull-right glyphicon glyphicon-plus-sign"></span></a>
+
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if is_phone %}active{% endif %} ">
+      <a href="{% url 'general:phones' %}"><i class="zmdi zmdi-phone-end"></i>Phone</a>
+    </li>
+
+     <li class="sub-menu ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-code-smartphone"></i>Your Moments</a>
+      <ul>
+        <li class=" m-b-5">
+                    <a class="pull-left p-r-0" href="{% url 'general:images' %}" title="Delivery">Your Moments</a>
+
+          <a class="pull-left p-r-0" href="{% url 'general:create_image' %}" title="active orders"> <span class="pull-right glyphicon glyphicon-plus-sign"></span></a>
+
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sub-menu {% if is_order %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href="{% url 'orders:orders' %}"><i class="zmdi zmdi-traffic"></i>Orders</a>
+      <ul>
+        <li class="{% if is_active_order %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'orders:orders' %}" title="active orders">Active Orders</a>
+
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_completed_order %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'orders:completed_orders' %}" title="Delivery">Completed Orders</a>
+
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_cancelled_order %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'orders:cancelled_orders' %}" title="Delivery">Cancelled Orders</a>
+
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sub-menu {% if is_product %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-washing-machine"></i>Products</a>
+      <ul>
+
+
+        <li class="{% if is_category %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:hsns' %}" title="Category">HSN/SAC Codes</a>
+          <a href="{% url 'products:create_hsn' %}" title="Create HSN/SAC ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_category %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:categories' %}" title="Category">Category</a>
+          <a href="{% url 'products:create_category' %}" title="Create Category ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_category %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:brands' %}" title="Brands">Brand</a>
+          <a href="{% url 'products:create_brand' %}" title="Create HSN/SAC ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_category %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:colors' %}" title="Category">Product Color</a>
+          <a href="{% url 'products:create_color' %}" title="Create HSN/SAC ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_pro %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:products' %}" title="Products">Products</a>
+          <a href="{% url 'products:create_product' %}" title="Create Product ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+        <li class="{% if is_pfo %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:pfos' %}" title="Product Occassion">Product For
+            Occassion</a>
+          <a href="{% url 'products:create_pfo' %}" title="Create PFC ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+        <li class="{% if is_uom %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:uoms' %}" title="UOM">Units Of measurement</a>
+          <a href="{% url 'products:create_uom' %}" title="Create Product ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+        <li class="{% if is_unit %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'products:units' %}" title="Units">Units</a>
+          <a href="{% url 'products:create_unit' %}" title="Create Unit ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+      </ul>
+    </li>
+
+
+    <li class="sub-menu {% if is_staff %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-male-female"></i>Staff</a>
+      <ul>
+        <li class="{% if is_des %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'staffs:designations' %}" title="Delivery">Designations</a>
+          <a href="{% url 'staffs:create_designation' %}" title="Create Designation">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+        <li class="{% if is_sf %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'staffs:staffs' %}" title="Delivery">Staff</a>
+          <a href="{% url 'staffs:create_staff' %}" title="Create Staff">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+    <li class="{% if is_dd %}active{% endif %}">
+      <a href="{% url 'general:due_days' %}"><i class="zmdi zmdi-calendar-check"></i>Due Days</a>
+    </li>
+    <li class="{% if is_users %}active{% endif %} ">
+      <a href="{% url 'customers:customers' %}"><i class="zmdi zmdi-account"></i>Users</a>
+
+    </li>
+    <li class="sub-menu {% if is_da %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-gps-dot"></i>Delivery Agents</a>
+      <ul>
+        <li class="{% if is_da %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'delivery_agents:delivery_agents' %}" title="Delivery">Delivery
+            Agents</a>
+          <a href="{% url 'delivery_agents:create_agent' %}" title="Create Agent">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+      </ul>
+    </li>
+    <li class="sub-menu {% if is_coupon %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-card"></i>Coupons</a>
+      <ul>
+        <li class="{% if is_coupon %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'general:coupons' %}" title="Create Coupon">Create Coupon</a>
+          <a href="{% url 'general:create_coupon' %}" title="Create Occassion">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+
+      </ul>
+    </li>
+    <li class="sub-menu {% if is_pt %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-account-box"></i>Person Type</a>
+      <ul>
+        <li class="{% if is_pt %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'general:person_types' %}" title="Occassion">Person Type</a>
+          <a href="{% url 'general:create_person_type' %}" title="Create Person Type">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+    <li class="sub-menu {% if is_general %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-cake"></i>Occassion</a>
+      <ul>
+        <li class="{% if is_occassion %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'general:occassions' %}" title="Occassion">Occassion</a>
+          <a href="{% url 'general:create_occassion' %}" title="Create Occassion">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+        <li class="{% if is_sub_occassion %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'general:sub_occassions' %}" title="Sub Occassion">Suboccassion</a>
+          <a href="{% url 'general:create_sub_occassion' %}" title="Create Sub Occassion ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="sub-menu {% if is_general %}active{% endif %} ">
+      <a data-ma-action="submenu-toggle" href=""><i class="zmdi zmdi-book"></i>GST Reports</a>
+      <ul>
+        <li class="{% if is_occassion %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'reports:gstr1_report' %}" title="Occassion">GSTR1 Report</a>
+
+          <div class="clearfix"></div>
+        </li>
+        <li class="{% if is_sub_occassion %}active{% endif %} m-b-5">
+          <a class="pull-left p-r-0" href="{% url 'general:sub_occassions' %}" title="Sub Occassion">Suboccassion</a>
+          <a href="{% url 'general:create_sub_occassion' %}" title="Create Sub Occassion ">
+            <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+          </a>
+          <div class="clearfix"></div>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</aside>

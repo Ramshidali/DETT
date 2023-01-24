@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETT-Payment page</title>
+</head>
+<body id="rzp-button1">
+    <style>
+        .payment-center{
+            flex: 0 0 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    <!-- RAZORPAY INTEGRATION HERE -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key" : "rzp_test_lXb6SxVILCvIy6",
+            "amount" : "{{order_amount}}",
+            "currency" : "INR",
+            "name" : "{{name}}",
+            "description": "Order Payment",
+            "order_id" : "{{payment_order_id}}", 
+            "callback_url": "{{redirect_url}}",
+            "prefill": {
+                "name": "{{name}}",
+                "email": "{{email}}",
+            },
+            "notes": {
+                "address": "{{notes}}"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+
+        var rzp1 = new Razorpay(options);
+        document.getElementById('rzp-button1').onload = function(e){
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+</body>
+</html>
+
+    

@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<section id="content">
+    <div class="container">
+        <div class="c-header">
+            <h2>{{title}}</h2>
+        </div>
+
+        <div class="action-header palette-theme {{current_theme}} bg clearfix">
+            <div class="ah-label hidden-xs palette-White text">{{title}}</div>
+
+            <div class="ah-search">
+                <form action="" method="get">
+                    <input class="ahs-input" name="q" placeholder="Start typing..." type="text">
+
+                    <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+                    <input class="hidden" type="submit"/>
+                </form>
+            </div>
+
+            <ul class="ah-actions actions a-alt">
+
+                {% if instance %}
+                <li>
+                    <a href="{% url 'products:create_product_variant' %}" title="Create Product Variant">
+                        <i class="zmdi zmdi-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'products:uom' pk=instance.pk %}" title="View Varient">
+                        <i class="zmdi zmdi-eye"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="action-button redirect" data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}"
+                       data-title="Are you sure?" href="{% url 'products:delete_uom' pk=instance.pk %}"
+                       title="Delete Variant">
+                        <i class="zmdi zmdi-delete"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <form action="{{url}}" class="ajax reset {% if redirect %}redirect{% endif %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Basic Details</div>
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.title.id_for_label }}">
+                                    {{ form.title.label }}
+                                    {% if form.title.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.title.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.title.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.title }}
+
+                                {% if form.title.errors %}
+                                <label class="error">{{ form.title.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                            <div class="form-group fg-line">
+                                <label for="{{ form.mrp.id_for_label }}">
+                                    {{ form.mrp.label }}
+                                    {% if form.mrp.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.mrp.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.mrp.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.mrp }}
+
+                                {% if form.mrp.errors %}
+                                <label class="error">{{ form.mrp.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+
+
+                            <div class="form-group fg-line">
+                                <label for="{{ form.price.id_for_label }}">
+                                    {{ form.price.label }}
+                                    {% if form.price.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.price.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.price.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.price }}
+
+                                {% if form.price.errors %}
+                                <label class="error">{{ form.price.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Product Details</div>
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.brand.id_for_label }}">
+                                    {{ form.brand.label }}
+                                    {% if form.brand.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.brand.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.brand.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.brand }}
+
+                                {% if form.brand.errors %}
+                                <label class="error">{{ form.brand.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                            <div class="form-group fg-line">
+                                <label for="{{ form.color.id_for_label }}">
+                                    {{ form.color.label }}
+                                    {% if form.color.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.color.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.color.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.color }}
+
+                                {% if form.color.errors %}
+                                <label class="error">{{ form.color.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-group fg-line">
+                                <label for="{{ form.gender.id_for_label }}">
+                                    {{ form.gender.label }}
+                                    {% if form.gender.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.gender.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.gender.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.gender }}
+
+                                {% if form.gender.errors %}
+                                <label class="error">{{ form.gender.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Unit and Stock</div>
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.unit.id_for_label }}">
+                                    {{ form.unit.label }}
+                                    {% if form.unit.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.unit.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.unit.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.unit }}
+
+                                {% if form.unit.errors %}
+                                <label class="error">{{ form.unit.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                            <div class="form-group fg-line">
+                                <label for="{{ form.uom.id_for_label }}">
+                                    {{ form.uom.label }}
+                                    {% if form.uom.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.uom.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.uom.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.uom }}
+
+                                {% if form.uom.errors %}
+                                <label class="error">{{ form.uom.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+
+                            <div class="form-group fg-line">
+                                <label for="{{ form.stock.id_for_label }}">
+                                    {{ form.stock.label }}
+                                    {% if form.stock.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.stock.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.stock.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.stock }}
+
+                                {% if form.stock.errors %}
+                                <label class="error">{{ form.stock.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Age Prefernces</div>
+                        <div class="card-body card-padding">
+                            <div class="form-group fg-line">
+                                <label for="{{ form.age_group.id_for_label }}">
+                                    {{ form.age_group.label }}
+                                    {% if form.age_group.field.required %}
+                                    <small class="star">*</small>
+                                    {% endif %}
+
+                                    {% if form.age_group.help_text %}
+                                    <span class="help-text-icon zmdi zmdi-info-outline"
+                                          data-content="{{ form.age_group.help_text }}"
+                                          data-original-title="Field Info" data-placement="left"
+                                          data-toggle="popover" data-trigger="hover"
+                                          title=""></span>
+                                    {% endif %}
+                                </label>
+                                {{ form.age_group }}
+
+                                {% if form.age_group.errors %}
+                                <label class="error">{{ form.age_group.errors.as_text }}</label>
+                                {% endif %}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div>
+                <button class="btn btn-info waves-effect" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+{% block static %}
+{% load static %}
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('input[type=text]').focus(function () {
+	        $(this).select();
+	    		});
+		  });
+
+
+
+</script>
+{{ form.media }}
+{% endblock %}
